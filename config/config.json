@@ -1,0 +1,58 @@
+{
+  "site": {
+    "title": "Comsecurity",
+    "base_url": "/",
+    "favicon": "/images/comsecurity/logocomsecurity.png",
+    "logo": "/images/comsecurity/logocomsecurity.png",
+    "logo_width": "240",
+    "logo_height": "34",
+    "logo_text": "comsecurity"
+  },
+
+  "settings": {
+    "pagination": 6,
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+
+  "params": {
+    "tag_manager_id": "",
+    "contact_form_action": "#",
+    "footer_content": "LIMITED helps our clients in achieving comprehensive and anticipatory security by understanding their entire operation and not just its individual parts.",
+    "copyright": "Designed & Developed By [comsecurity](https:www.comsecurity.com)"
+  },
+
+  "contact_info": {
+    "phone": "+91 95751 30999",
+    "email": "comthfh@gmail.com",
+    "location": "41-B SECTOR SCH.134 STAR SQUARE MARUTI SUZUKI (R,O) SHOWROOM INDORE 452001"
+  },
+
+  "nav_button": {
+    "enable": true,
+    "label": "Download Now",
+    "link": "/"
+  },
+
+  "metadata": {
+    "meta_author": "comsecurity",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "comsecurity"
+  },
+
+  "call_to_action": {
+    "enable": true,
+    "title": "comsecurity",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.",
+    "button": {
+      "label": "Download The Theme",
+      "link": "/"
+    }
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "comsecurity",
+    "settings": {}
+  }
+}
