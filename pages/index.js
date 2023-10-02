@@ -300,9 +300,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                     className="rounded-t-2xl"
                   />
                   <h3 className="h5 mt-6 mb-5">Security Guard</h3>
-                  <Link href="https://wa.me/919575130999?text=Hi" >
-                    {/* <button className="btn btn-primary">more..</button> */}
-                  </Link>
+                  
                 </div>
               </SwiperSlide>
               <SwiperSlide >
@@ -317,9 +315,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
                   <h3 className="h5 mt-6 mb-5">House Keeping</h3>
 
-                  <Link href="https://wa.me/919575130999?text=Hi" >
-                    {/* <button className="btn btn-primary">more..</button> */}
-                  </Link>
+                  
                 </div>
               </SwiperSlide>
               <SwiperSlide >
@@ -332,9 +328,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                   />
 
                   <h3 className="h5 mt-6 mb-5">Personal Bodyguard</h3>
-                  <Link href="https://wa.me/919575130999?text=Hi" >
-                    {/* <button className="btn btn-primary">more..</button> */}
-                  </Link>
+                  
 
                 </div>
               </SwiperSlide>
@@ -348,9 +342,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                     alt="com." />
 
                   <h3 className="h5 mt-6 mb-5">Security's</h3>
-                  <Link href="https://wa.me/919575130999?text=Hi" >
-                    {/* <button className="btn btn-primary">more..</button> */}
-                  </Link>
+                 
 
                 </div>
               </SwiperSlide>
@@ -365,9 +357,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
                   <h3 className="h5 mt-6 mb-5">PSO</h3>
 
-                  <Link href="https://wa.me/919575130999?text=Hi" >
-                    {/* <button className="btn btn-primary">more..</button> */}
-                  </Link>
+                  
                 </div>
               </SwiperSlide>
               <SwiperSlide >
@@ -381,9 +371,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
                   <h3 className="h5 mt-6 mb-5">Security Supervisor</h3>
 
-                  <Link href="https://wa.me/919575130999?text=Hi" >
-                    {/* <button className="btn btn-primary">more..</button> */}
-                  </Link>
+                  
                 </div>
               </SwiperSlide>
               <SwiperSlide >
@@ -401,9 +389,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
                   <h3 className="h5 mt-6 mb-5">Bouncer</h3>
 
-                  <Link href="https://wa.me/919575130999?text=Hi" >
-                    {/* <button className="btn btn-primary">more..</button> */}
-                  </Link>
+                  
                 </div>
               </SwiperSlide>
              
