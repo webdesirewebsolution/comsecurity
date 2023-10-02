@@ -56,7 +56,7 @@ const { title } = frontmatter;
             <SwiperSlide >
               <div className="feature-card m-4 rounded-md border border-transparent py-16 p shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
                   <Image src="/images/internationaltour/malasiya.jpg"    width={500}
-                    height={500} alt=".." />                     
+                    height={500} alt="com" />                     
                     <h3 className="h4 mt-6 mb-5">Malaysia</h3>
                     <Link href="https://wa.me/919575130999?text=Hi" >
                     <button className="btn btn-primary">more..</button>
@@ -67,7 +67,7 @@ const { title } = frontmatter;
               <div className="feature-card m-4 rounded-md border border-transparent py-16 p shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
                 
                   <Image src="/images/internationaltour/vietnam.jpg"    width={500}
-                    height={500} alt=".." />
+                    height={500} alt="com" />
                   
                     <h3 className="h4 mt-6 mb-5">Vietnam</h3>
                     <Link href="https://wa.me/919575130999?text=Hi" >
@@ -81,7 +81,7 @@ const { title } = frontmatter;
               <div className="feature-card m-4 rounded-md border border-transparent py-16 p shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
                 
                   <Image src="/images/internationaltour/dubai.jpg"    width={500}
-                    height={500} alt=".." />
+                    height={500} alt="com" />
                   
                     <h3 className="h4 mt-6 mb-5">Dubai</h3>
                  
@@ -94,7 +94,7 @@ const { title } = frontmatter;
               <div className="feature-card m-4 rounded-md border border-transparent py-16 p shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
                 
                   <Image src="/images/internationaltour/bali.jpg"    width={500}
-                    height={500} alt=".." />
+                    height={500} alt="com" />
                   
                     <h3 className="h4 mt-6 mb-5">Bali</h3>
                     <Link href="https://wa.me/919575130999?text=Hi" >
@@ -107,7 +107,7 @@ const { title } = frontmatter;
               <div className="feature-card m-4 rounded-md border border-transparent py-16 p shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
                 
                   <Image src="/images/internationaltour/turkey.jpg"    width={500}
-                    height={500} alt=".." />
+                    height={500} alt="com" />
                   
                     <h3 className="h4 mt-6 mb-5">Turkey</h3>
                     <Link href="https://wa.me/919575130999?text=Hi" >
@@ -120,7 +120,7 @@ const { title } = frontmatter;
               <div className="feature-card m-4 rounded-md border border-transparent py-16 p shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
                 
                   <Image src="/images/internationaltour/maldiev.jpg"    width={500}
-                    height={500} alt=".." />
+                    height={500} alt="com" />
                   
                     <h3 className="h4 mt-6 mb-5">Maldives</h3>
                     <Link href="https://wa.me/919575130999?text=Hi" >

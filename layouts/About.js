@@ -283,13 +283,13 @@ const About = ({ data }) => {
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div>
-              <img className="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity1.jpg" alt="" />
+              <Image className="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity1.jpg" alt="" />
             </div>
             <div>
-              <img className="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity-slider-image-2.jpg" alt="" />
+              <Image className="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity-slider-image-2.jpg" alt="" />
             </div>
             <div>
-              <img className="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity-slider-image-3.jpg" alt="" />
+              <Image className="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity-slider-image-3.jpg" alt="" />
             </div>
 
 

@@ -89,7 +89,7 @@ const { title } = frontmatter;
           
             <SwiperSlide >
               <div className="feature-card m-4 rounded-md border border-transparent py-16 p shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
-                  <Image src="/images/domestictoure/touregoa.jpeg"  alt="..." 
+                  <Image src="/images/domestictoure/touregoa.jpeg"  alt="com." 
                    width={500}
                    height={500}/>                     
                     <h3 className="h4 mt-6 mb-5">Goa</h3>
@@ -101,7 +101,7 @@ const { title } = frontmatter;
             <SwiperSlide >
               <div className="feature-card m-4 rounded-md border border-transparent py-16 p shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
                 
-                  <Image src="/images/domestictoure/tourgujrat1.png"  alt="..." 
+                  <Image src="/images/domestictoure/tourgujrat1.png"  alt="com." 
                    width={500}
                    height={500}/>
                   
@@ -116,7 +116,7 @@ const { title } = frontmatter;
             <SwiperSlide >
               <div className="feature-card m-4 rounded-md border border-transparent py-16 p shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
                 
-                  <Image src="/images/domestictoure/tourkerala2.png"  alt="..." 
+                  <Image src="/images/domestictoure/tourkerala2.png"  alt="com." 
                    width={500}
                    height={500}/>
                   
@@ -131,7 +131,7 @@ const { title } = frontmatter;
             <SwiperSlide >
               <div className="feature-card m-4 rounded-md border border-transparent py-16 p shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
                 
-                  <Image src="/images/domestictoure/toureladhakh.jpeg"  alt="..." 
+                  <Image src="/images/domestictoure/toureladhakh.jpeg"  alt="com." 
                    width={500}
                    height={500}/>
                   
@@ -145,7 +145,7 @@ const { title } = frontmatter;
             <SwiperSlide >
               <div className="feature-card m-4 rounded-md border border-transparent py-16 p shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
                 
-                  <Image src="/images/domestictoure/toureshikkim.jpeg"  alt="..." 
+                  <Image src="/images/domestictoure/toureshikkim.jpeg"  alt="com." 
                    width={500}
                    height={500}/>
                   
@@ -159,7 +159,7 @@ const { title } = frontmatter;
             <SwiperSlide >
               <div className="feature-card m-4 rounded-md border border-transparent py-16 p shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
                 
-                  <Image src="/images/domestictoure/toureshimla.jpg"  alt="..."
+                  <Image src="/images/domestictoure/toureshimla.jpg"  alt="com."
                    width={500}
                    height={500} />
                   
