@@ -111,6 +111,9 @@ Security Guard, Gunman so connect us.
               </p>
             </div>
             <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
+             
+             
+             
               <form>
                 <div className="relative mb-6" data-te-input-wrapper-init>
                   <input type="text"
@@ -150,6 +153,9 @@ Security Guard, Gunman so connect us.
                   Send
                 </button>
               </form>
+
+
+
             </div>
           </div>
         </section>
@@ -262,12 +268,12 @@ Security Guard, Gunman so connect us.
                         </div>
                       </div>
                       <div className="ml-6 grow">
-                        <p className="mb-2 font-bold dark:text-white">Bug report</p>
+                        <p className="mb-2 font-bold dark:text-white">Contact</p>
                         <p className="text-neutral-500 dark:text-neutral-200">
-                          bugs@example.com
+                        care@comsecurity.in
                         </p>
                         <p className="text-neutral-500 dark:text-neutral-200">
-                          +1 234-567-89
+                        +91-9971565508
                         </p>
                       </div>
                     </div>

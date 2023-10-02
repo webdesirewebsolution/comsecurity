@@ -283,13 +283,13 @@ const About = ({ data }) => {
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div>
-              <Image className="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity1.jpg" alt="" />
+              <Image width={500} height={500} className="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity1.jpg" alt="" />
             </div>
             <div>
-              <Image className="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity-slider-image-2.jpg" alt="" />
+              <Image width={500} height={500} className="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity-slider-image-2.jpg" alt="" />
             </div>
             <div>
-              <Image className="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity-slider-image-3.jpg" alt="" />
+              <Image width={500} height={500} className="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity-slider-image-3.jpg" alt="" />
             </div>
 
 
@@ -331,7 +331,7 @@ const About = ({ data }) => {
           </div>
         </div>
       </section>
-      <Cta />
+      {/* <Cta /> */}
     </>
   );
 };

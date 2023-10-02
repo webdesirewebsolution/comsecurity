@@ -556,7 +556,9 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
           <div className="max-w-sm  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-8">
             <a href="#">
-              <Image className="rounded-t-lg" src="/images/comsecurity/services/security1.jpg" alt="" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security1.jpg" 
+              
+              alt="" />
             </a>
             <div className="p-5">
               <a href="#">
@@ -571,7 +573,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-8">
             <a href="#">
-              <Image className="rounded-t-lg" src="/images/comsecurity/services/security2.jpg" alt="" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security2.jpg" alt="" />
             </a>
             <div className="p-5">
               <a href="#">
@@ -586,7 +588,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <Image className="rounded-t-lg" src="/images/comsecurity/services/security3.jpg" alt="" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security3.jpg" alt="" />
             </a>
             <div className="p-5">
               <a href="#">
@@ -599,7 +601,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <Image className="rounded-t-lg" src="/images/comsecurity/services/security4.jpg" alt="" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security4.jpg" alt="" />
             </a>
             <div className="p-5">
               <a href="#">
@@ -612,7 +614,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <Image className="rounded-t-lg" src="/images/comsecurity/services/security1.jpg" alt="" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security1.jpg" alt="" />
             </a>
             <div className="p-5">
               <a href="#">
@@ -625,7 +627,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <Image className="rounded-t-lg" src="/images/comsecurity/services/security5.jpg" alt="" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security5.jpg" alt="" />
             </a>
             <div className="p-5">
               <a href="#">
@@ -638,7 +640,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <Image className="rounded-t-lg" src="/images/comsecurity/services/security6.jpg" alt="" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security6.jpg" alt="" />
             </a>
             <div className="p-5">
               <a href="#">
@@ -651,7 +653,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <Image className="rounded-t-lg" src="/images/comsecurity/services/parking.jpg" alt="" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/parking.jpg" alt="" />
             </a>
             <div className="p-5">
               <a href="#">
