@@ -254,7 +254,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                       width={1170}
                       height={666}
                       priority={true}
-                      alt=""
+                      alt="comsecurity"
                     />
                   </div> */}
 
@@ -319,13 +319,12 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                 </div>
               </SwiperSlide>
               <SwiperSlide >
-                <div className=" rounded-t-2xl feature-card m-4 rounded-md border border-transparent  p shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
+                <div className=" rounded-t-2xl feature-card m-4 rounded-md border border-transparent  p shadow-[0px_4px_25px_rgba(0,0,0,0.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
 
                   <Image src="/images/comsecurity/services/comservice7.jpg" width={500}
                     height={500}
                     alt="Picture of the author"
-                    className="rounded-t-2xl"
-                  />
+                    className="rounded-t-2xl" />
 
                   <h3 className="h5 mt-6 mb-5">Personal Bodyguard</h3>
                   
@@ -348,16 +347,12 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
               </SwiperSlide>
               <SwiperSlide >
                 <div className="rounded-t-2xl feature-card m-4 rounded-md border border-transparent  p shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
-
                   <Image src="/images/comsecurity/services/comservice3.jpg"
                     width={500}
                     height={500}
                     className="rounded-t-2xl"
                     alt="com." />
-
-                  <h3 className="h5 mt-6 mb-5">PSO</h3>
-
-                  
+                  <h3 className="h5 mt-6 mb-5">PSO</h3>                 
                 </div>
               </SwiperSlide>
               <SwiperSlide >
@@ -366,7 +361,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                   <Image src="/images/comsecurity/services/comservice6.jpg" width={500}
                     height={500}
                     className="rounded-t-2xl"
-                    alt=""
+                    alt="comsecurity"
                   />
 
                   <h3 className="h5 mt-6 mb-5">Security Supervisor</h3>
@@ -384,7 +379,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                   <Image src="/images/comsecurity/services/comservice2.jpg" width={500}
                     height={500}
                     className="rounded-t-2xl"
-                    alt=""
+                    alt="comsecurity"
                   />
 
                   <h3 className="h5 mt-6 mb-5">Bouncer</h3>
@@ -544,7 +539,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
             <a href="#">
               <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security1.jpg" 
               
-              alt="" />
+              alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="#">
@@ -559,7 +554,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-8">
             <a href="#">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security2.jpg" alt="" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security2.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="#">
@@ -574,7 +569,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security3.jpg" alt="" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security3.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="#">
@@ -587,7 +582,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security4.jpg" alt="" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security4.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="#">
@@ -600,7 +595,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security1.jpg" alt="" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security1.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="#">
@@ -613,20 +608,18 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security5.jpg" alt="" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security5.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="#">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>PERSONAL BODYGUARD</h5>
               </a>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Fully Traned</p>
-
             </div>
           </div>
-
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security6.jpg" alt="" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security6.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="#">
@@ -639,7 +632,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/parking.jpg" alt="" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/parking.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="#">
