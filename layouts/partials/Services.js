@@ -23,6 +23,7 @@ const Services = ({ data }) => {
                   src="/images/comsecurity/services/sguard.jpg"
                   width={600}
                   height={600}
+                  alt=""
                 />
               </div>
             </div>
@@ -44,6 +45,7 @@ const Services = ({ data }) => {
                   src="/images/comsecurity/services/ssupervisor.jpg"
                   width={600}
                   height={600}
+                  alt=""
                 />
               </div>
             </div>
@@ -63,6 +65,7 @@ const Services = ({ data }) => {
                   src="/images/comsecurity/services/hkeeping.jpg"
                   width={600}
                   height={600}
+                  alt=""
                 />
               </div>
             </div>
@@ -82,6 +85,7 @@ const Services = ({ data }) => {
                   src="/images/comsecurity/services/pso.jpg"
                   width={600}
                   height={600}
+                  alt=""
                 />
               </div>
             </div>
@@ -101,6 +105,7 @@ const Services = ({ data }) => {
                   src="/images/comsecurity/services/pbodyguard.jpg"
                   width={600}
                   height={600}
+                  alt=""
                 />
               </div>
             </div>
@@ -120,6 +125,7 @@ const Services = ({ data }) => {
                   src="/images/comsecurity/services/aboutcom.jpg"
                   width={600}
                   height={600}
+                  alt=""
                 />
               </div>
             </div>
@@ -151,6 +157,7 @@ const Services = ({ data }) => {
                       src="/images/comsecurity/services/privacy.jpg"
                       width={80}
                       height={80}
+                      alt=""
 
                     />
                     <h5 className="h4 mt-2">Prevention</h5>
@@ -169,6 +176,7 @@ const Services = ({ data }) => {
                       src="/images/comsecurity/services/visibility.jpg"
                       width={80}
                       height={80}
+                      alt=""
 
                     />
                     <h5 className="h4 mt-2">Visibility</h5>
@@ -186,6 +194,7 @@ const Services = ({ data }) => {
                       src="/images/comsecurity/services/vigilance.jpg"
                       width={80}
                       height={80}
+                      alt=""
 
                     />
                     <h5 className="h4 mt-2">Vigilance</h5>

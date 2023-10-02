@@ -299,7 +299,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                     alt="Picture of the author"
                     className="rounded-t-2xl"
                   />
-                  <h3 className="h4 mt-6 mb-5">Security Guard</h3>
+                  <h3 className="h5 mt-6 mb-5">Security Guard</h3>
                   <Link href="https://wa.me/919575130999?text=Hi" >
                     {/* <button className="btn btn-primary">more..</button> */}
                   </Link>
@@ -315,7 +315,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                     className="rounded-t-2xl"
                   />
 
-                  <h3 className="h4 mt-6 mb-5">House Keeping</h3>
+                  <h3 className="h5 mt-6 mb-5">House Keeping</h3>
 
                   <Link href="https://wa.me/919575130999?text=Hi" >
                     {/* <button className="btn btn-primary">more..</button> */}
@@ -331,7 +331,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                     className="rounded-t-2xl"
                   />
 
-                  <h3 className="h4 mt-6 mb-5">Personal Bodyguard</h3>
+                  <h3 className="h5 mt-6 mb-5">Personal Bodyguard</h3>
                   <Link href="https://wa.me/919575130999?text=Hi" >
                     {/* <button className="btn btn-primary">more..</button> */}
                   </Link>
@@ -347,7 +347,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                     className="rounded-t-2xl"
                     alt="..." />
 
-                  <h3 className="h4 mt-6 mb-5">Security's</h3>
+                  <h3 className="h5 mt-6 mb-5">Security's</h3>
                   <Link href="https://wa.me/919575130999?text=Hi" >
                     {/* <button className="btn btn-primary">more..</button> */}
                   </Link>
@@ -363,7 +363,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                     className="rounded-t-2xl"
                     alt="..." />
 
-                  <h3 className="h4 mt-6 mb-5">PSO</h3>
+                  <h3 className="h5 mt-6 mb-5">PSO</h3>
 
                   <Link href="https://wa.me/919575130999?text=Hi" >
                     {/* <button className="btn btn-primary">more..</button> */}
@@ -376,9 +376,10 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                   <Image src="/images/comsecurity/services/comservice6.jpg" width={500}
                     height={500}
                     className="rounded-t-2xl"
+                    alt=""
                   />
 
-                  <h3 className="h4 mt-6 mb-5">Security Supervisor</h3>
+                  <h3 className="h5 mt-6 mb-5">Security Supervisor</h3>
 
                   <Link href="https://wa.me/919575130999?text=Hi" >
                     {/* <button className="btn btn-primary">more..</button> */}
@@ -395,9 +396,10 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                   <Image src="/images/comsecurity/services/comservice2.jpg" width={500}
                     height={500}
                     className="rounded-t-2xl"
+                    alt=""
                   />
 
-                  <h3 className="h4 mt-6 mb-5">Bouncer</h3>
+                  <h3 className="h5 mt-6 mb-5">Bouncer</h3>
 
                   <Link href="https://wa.me/919575130999?text=Hi" >
                     {/* <button className="btn btn-primary">more..</button> */}
@@ -508,9 +510,9 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                 "h2",
                 "mt-4 section-title bar-left"
               )} */}
-              <h2 className="mt-4 section-title bar-left flex"> <h2 className="" style={{ color: "red", marginRight: "10px" }}>About</h2> Our Company</h2>
+              <div className="mt-4 section-title bar-left flex"> <h2 className="" style={{ color: "red", marginRight: "10px" }}>About</h2> <h2>Our Company</h2></div>
               {markdownify(speciality.primary.description, "p", "mt-10")}
-              <div class="grid grid-cols-3 gap-4 mt-8">
+              <div className="grid grid-cols-3 gap-4 mt-8">
                 <div className="">
                   <div>
                     <h2>250</h2>
@@ -550,112 +552,112 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
           {markdownify(servicehome.description, "p", "mt-10")}
           {/* <p className="uppercase mt-8">{servicehome.sub_title}</p> */}
         </div>
-        <div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-4 mt-5 container">
+        <div className="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-4 mt-5 container">
 
-          <div class="max-w-sm  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-8">
+          <div className="max-w-sm  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-8">
             <a href="#">
-              <img class="rounded-t-lg" src="/images/comsecurity/services/security1.jpg" alt="" />
+              <img className="rounded-t-lg" src="/images/comsecurity/services/security1.jpg" alt="" />
             </a>
-            <div class="p-5">
+            <div className="p-5">
               <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY GUARD</h5>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY GUARD</h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Trained Security Guard</p>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Trained Security Guard</p>
 
             </div>
           </div>
 
 
 
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-8">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-8">
             <a href="#">
-              <img class="rounded-t-lg" src="/images/comsecurity/services/security2.jpg" alt="" />
+              <img className="rounded-t-lg" src="/images/comsecurity/services/security2.jpg" alt="" />
             </a>
-            <div class="p-5">
+            <div className="p-5">
               <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>HOUSEKEEPING</h5>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>HOUSEKEEPING</h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Best Quality Staff</p>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Best Quality Staff</p>
 
             </div>
           </div>
 
 
 
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <img class="rounded-t-lg" src="/images/comsecurity/services/security3.jpg" alt="" />
+              <img className="rounded-t-lg" src="/images/comsecurity/services/security3.jpg" alt="" />
             </a>
-            <div class="p-5">
+            <div className="p-5">
               <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY SUPERVISOR</h5>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY SUPERVISOR</h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
 
             </div>
           </div>
 
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <img class="rounded-t-lg" src="/images/comsecurity/services/security4.jpg" alt="" />
+              <img className="rounded-t-lg" src="/images/comsecurity/services/security4.jpg" alt="" />
             </a>
-            <div class="p-5">
+            <div className="p-5">
               <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>PSO</h5>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>PSO</h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
 
             </div>
           </div>
 
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <img class="rounded-t-lg" src="/images/comsecurity/services/security1.jpg" alt="" />
+              <img className="rounded-t-lg" src="/images/comsecurity/services/security1.jpg" alt="" />
             </a>
-            <div class="p-5">
+            <div className="p-5">
               <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY'S</h5>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY'S</h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
 
             </div>
           </div>
 
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <img class="rounded-t-lg" src="/images/comsecurity/services/security5.jpg" alt="" />
+              <img className="rounded-t-lg" src="/images/comsecurity/services/security5.jpg" alt="" />
             </a>
-            <div class="p-5">
+            <div className="p-5">
               <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>PERSONAL BODYGUARD</h5>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>PERSONAL BODYGUARD</h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Fully Traned</p>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Fully Traned</p>
 
             </div>
           </div>
 
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <img class="rounded-t-lg" src="/images/comsecurity/services/security6.jpg" alt="" />
+              <img className="rounded-t-lg" src="/images/comsecurity/services/security6.jpg" alt="" />
             </a>
-            <div class="p-5">
+            <div className="p-5">
               <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>BOUNCER</h5>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>BOUNCER</h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Knowledgeble Experts</p>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Knowledgeble Experts</p>
 
             </div>
           </div>
 
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
             <a href="#">
-              <img class="rounded-t-lg" src="/images/comsecurity/services/parking.jpg" alt="" />
+              <img className="rounded-t-lg" src="/images/comsecurity/services/parking.jpg" alt="" />
             </a>
-            <div class="p-5">
+            <div className="p-5">
               <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>Office Security</h5>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>Office Security</h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Knowledgeble Experts</p>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Knowledgeble Experts</p>
 
             </div>
           </div>
@@ -684,14 +686,14 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                   "h2",
                   "mt-4 section-title bar-left"
                 )} */}
-              <h2 className="  flex mb-6 mt-5"> <h2 className="" style={{ color: "red", marginRight: "10px" }}>Why</h2> Choose Us</h2>
+              <div className="  flex mb-6 mt-5"> <h2 className="" style={{ color: "red", marginRight: "10px" }}>Why</h2><h2> Choose Us</h2></div>
 
 
-              <div class="grid  md:grid-cols-2 " >
-                <figure class="flex flex-col      ">
-                  <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+              <div className="grid  md:grid-cols-2 " >
+                <figure className="flex flex-col      ">
+                  <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
 
-                    <div class="max-w-sm    ">
+                    <div className="max-w-sm    ">
                       <div className="" style={{ paddingRight: "204px" }} >
                         <Image
                           className="mx-auto "
@@ -702,18 +704,18 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                         />
                       </div>
                       <a href="#">
-                        <h5 class="mb-2 mt-3 text-2xl  tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}>24/7 Support</h5>
+                        <h5 className="mb-2 mt-3 text-2xl  tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}>24/7 Support</h5>
                       </a>
-                      <p class="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>Simply dummy text of the printing andrety esetting industry.Lorem ipsum dolor sit amet, ligula magna at etiam.</p>
+                      <p className="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>Simply dummy text of the printing andrety esetting industry.Lorem ipsum dolor sit amet, ligula magna at etiam.</p>
 
                     </div>
                   </blockquote>
 
                 </figure>
-                <figure class="flex flex-col  rounded-tr-lg dark:bg-gray-800 dark:border-gray-700">
-                  <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                <figure className="flex flex-col  rounded-tr-lg dark:bg-gray-800 dark:border-gray-700">
+                  <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
 
-                    <div class="max-w-sm   ">
+                    <div className="max-w-sm   ">
                       <div className="" style={{ paddingRight: "204px" }} >
                         <Image
                           className="mx-auto "
@@ -724,19 +726,19 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                         />
                       </div>
                       <a href="#">
-                        <h5 class="mb-2 mt-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}>Expert Employees</h5>
+                        <h5 className="mb-2 mt-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}>Expert Employees</h5>
                       </a>
-                      <p class="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>
+                      <p className="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>
                         Our Team comprises of security professionals with background in Armed Forces, Para Military Forces and Police. Their experience and insight within the security industry are unmatched.</p>
 
                     </div>
                   </blockquote>
 
                 </figure>
-                <figure class="flex flex-col    rounded-bl-lg md:border-b-0 md:border-r dark:bg-gray-800 dark:border-gray-700">
-                  <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                <figure className="flex flex-col    rounded-bl-lg md:border-b-0 md:border-r dark:bg-gray-800 dark:border-gray-700">
+                  <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
 
-                    <div class="max-w-sm    ">
+                    <div className="max-w-sm    ">
                       <div className="" style={{ paddingRight: "204px" }}>
                         <Image
                           className="mx-auto "
@@ -747,22 +749,23 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                         />
                       </div>
                       <a href="#">
-                        <h5 class="mb-2 mt-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}> Verified Service</h5>
+                        <h5 className="mb-2 mt-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}> Verified Service</h5>
                       </a>
-                      <p class="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>
+                      <p className="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>
                         • Police <br />
                         • Discharge Book <br />
                         • Bio-Data<br />
-                        • References.</p>
+                        • References.
+                        </p>
 
                     </div>
                   </blockquote>
 
                 </figure>
-                <figure class="flex flex-col border-gray-200 rounded-b-lg md:rounded-br-lg dark:bg-gray-800 dark:border-gray-700">
-                  <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                <figure className="flex flex-col border-gray-200 rounded-b-lg md:rounded-br-lg dark:bg-gray-800 dark:border-gray-700">
+                  <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
 
-                    <div class="max-w-sm    ">
+                    <div className="max-w-sm    ">
                       <div className="" style={{ paddingRight: "204px" }}>
                         <Image
                           className="mx-auto "
@@ -773,9 +776,9 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                         />
                       </div>
                       <a href="#">
-                        <h5 class="mb-2 mt-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}>Secured Service</h5>
+                        <h5 className="mb-2 mt-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}>Secured Service</h5>
                       </a>
-                      <p class="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>Simply dummy text of the printing andrety esetting industry.Lorem ipsum dolor sit amet, ligula magna at etiam.</p>
+                      <p className="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>Simply dummy text of the printing andrety esetting industry.Lorem ipsum dolor sit amet, ligula magna at etiam.</p>
 
                     </div>
                   </blockquote>
@@ -825,7 +828,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                 "mt-4 section-title bar-left"
               )}
               {markdownify(speciality.primary.description, "p", "mt-10")}
-              <div class="grid grid-cols-3 gap-4 mt-8">
+              <div className="grid grid-cols-3 gap-4 mt-8">
                 <div className="">
                   <div>
                     <h2>250</h2>

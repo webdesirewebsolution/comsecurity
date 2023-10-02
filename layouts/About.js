@@ -37,14 +37,15 @@ const About = ({ data }) => {
                   height={487}
                   alt=""
                 /> */}
-                <Image 
+                <Image
                   src="/images/comsecurity/services/aboutcom.jpg"
-                    width={600}
-                    height={600}
+                  width={600}
+                  height={600}
+                  alt=""
                 />
-                
-                
-               
+
+
+
               </div>
             </div>
             <div className="animate md:col-6 lg:col-4 md:order-1">
@@ -118,10 +119,11 @@ const About = ({ data }) => {
                   height={47}
                   fill={false}
                 /> */}
-                <Image 
+                <Image
                   src="/images/comsecurity/services/aboutcom.jpg"
-                    width={600}
-                    height={600}
+                  width={600}
+                  height={600}
+                  alt=""
                 />
               </div>
             </div>
@@ -271,28 +273,28 @@ const About = ({ data }) => {
           </div>
         </div> */}
 
-        
-<div className="section container">
+
+        <div className="section container">
           <div className="animate text-center">
             <p>{our_member.subtitle}</p>
             {markdownify(our_member.title, "h2", "section-title mt-4")}
             {markdownify(our_member.content, "p", "mt-16")}
           </div>
-          
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity1.jpg" alt="" />
-    </div>
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity-slider-image-2.jpg" alt="" />
-    </div>
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity-slider-image-3.jpg" alt="" />
-    </div>
-    
-    
-    </div>
-</div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div>
+              <img className="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity1.jpg" alt="" />
+            </div>
+            <div>
+              <img className="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity-slider-image-2.jpg" alt="" />
+            </div>
+            <div>
+              <img className="h-auto max-w-full rounded-lg" src="/images/comsecurity/banner/cosecurity-slider-image-3.jpg" alt="" />
+            </div>
+
+
+          </div>
+        </div>
 
 
         {/* Office */}
