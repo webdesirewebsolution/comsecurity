@@ -5,9 +5,9 @@ const Button = ({ href, type, rel, children }) => {
     <Link
       href={href}
       target="_blank"
-      rel={`noopener noreferrer ${
-        rel ? (rel === "follow" ? "" : rel) : "nofollow"
-      }`}
+      // rel={`noopener noreferrer ${
+      //   rel ? (rel === "follow" ? "" : rel) : "nofollow"
+      // }`}
       className={`btn me-4 mb-4 ${
         type === "outline" ? "btn-outline-primary" : "btn-primary"
       } border-primary hover:text-white hover:no-underline`}
