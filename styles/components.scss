@@ -40,7 +40,7 @@
   li {
     @apply inline-block;
     a {
-      @apply block mt-1 h-7 w-7 rounded-full border border-dark text-center text-dark transition-all duration-300;
+      @apply block mt-1 h-7 w-7 rounded-full border border-blue-500 text-center text-blue-500 transition-all duration-300;
 
       svg {
         @apply m-auto h-7;
@@ -369,20 +369,111 @@
 // }
 
 
-.bg-textt {
-  /* background-color: rgb(0,0,0); Fallback color */
-  //  background-color: white ;
-  color: white;
-  font-weight: bold;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
+@media (min-width: 1024px) and (max-width: 3000px) {
+  .bg-textt {
+    
+    color: white;
+    font-weight: bold;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .bg-textt {
+    
+    color: white;
+    font-weight: bold;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 490px)and (max-width: 767px) {
+  .bg-textt {
+    
+    color: white;
+    font-weight: bold;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .bg-textt {
+    
+    color: white;
+    font-weight: bold;
+  
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+
+
+
+// moto h1
+@media (min-width: 1024px) and (max-width: 3000px) {
+  .moto h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.2;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .moto h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.2;
+  }
+}
+@media (min-width: 490px)and (max-width: 767px) {
+  .moto h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 480px) {
+  .moto h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.2;
+  }
 }
 
 .bg-image {
@@ -397,13 +488,7 @@
   opacity: 1;
   transition:  0.3s, border-radius 0.3s, opacity 0.3s;
 }
-.moto h1{
-  font-size: 48px;
-  font-weight: 700;
-  color: #fff;
-  font-family: "Raleway", sans-serif;
-  line-height: 1.2;
-}
+
 
 .mototitle h2{
   color: #fff;

@@ -15,9 +15,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import Social from "@components/Social";
 import social from "@config/social.json";
 import { IoMail, IoCall, IoLogoWhatsapp } from "react-icons/io5";
-import Image from 'next/image'
+import Image from "next/image";
 import Homecta from "@layouts/components/Homecta";
 import Officeadd from "@layouts/components/Officeadd";
+import Reviews from "@layouts/components/Reviews";
+import Testimonial from "@layouts/components/Testimonial";
 
 
 const Home = ({ banner, brands, features, intro, speciality, testimonial, servicehome }) => {
@@ -116,13 +118,13 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
       {/* <div id="mySidenav" className="sidenav fixed-top">
                 <a href="#" id="blog" className="trxt-dark">Contact</a>
             </div> */}
-      <a href="https://wa.me/91-9971565508?text=Hi" className="float" target="_blank">
+      <a href="https://wa.me/919971565508?text=Hi" className="float" target="_blank">
         {/* <i className="fa fa-whatsapp my-float"></i> */}
         <IoLogoWhatsapp style={{ marginTop: "15px", marginLeft: "14px" }} />
       </a>
-  
 
-{/* Home Banner */}
+
+      {/* Home Banner */}
 
       <section className="section banner pt-0 pb-0" style={{ marginTop: "-38px" }}>
         {/* <div className="container-xl">
@@ -168,13 +170,22 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
               " banner-title opacity-0 text-white font-thin"
             )}
           </div>
-          <div className="mt-4" >
-            <button type="submit" name="singlebutton" className="btn btn-primary btn-lg inputbox inqbtn font-thin" style={{ height: "52px" }}>Contact Us</button>
+          <div className="mt-4 " >
+            {/* <button type="submit" name="singlebutton" className="btn btn-white-bordered btn-lg inputbox inqbtn font-thin me-3" style={{ height: "52px",background: "transpare", }}>Contact Us</button> */}
+            <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
+           <button class="me-3 bg-transparent hover:bg-white-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded" style={{ height: "52px" }}>
+              Contact Us
+            </button>
+           </a>
+            <button class="me-3 bg-transparent hover:bg-white-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded" style={{ height: "52px" }}>
+              Read More
+            </button>
+            {/* <button type="submit" name="singlebutton" className="btn btn-primary btn-lg inputbox inqbtn font-thin" style={{ height: "52px" }}>Read More</button> */}
           </div>
         </div>
       </section>
 
-{/*End Home Banner */}
+      {/*End Home Banner */}
 
       {/* <div>
         <div className="bg-default enquiry-form  bg-light  text-center inq">
@@ -260,10 +271,10 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
 
       {/* WE Provide */}
-      <section className="section sectionhome" >
+      {/* <section className="section sectionhome" >
         <div className="container text-center">
           <div className="animate">
-            {/* <p className="uppercase">{features.sub_title}</p> */}
+            
             {markdownify(features.title, "h2", "mt-4 section-title")}
             {markdownify(features.description, "p", "mt-10")}
           </div>
@@ -300,7 +311,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                     className="rounded-t-2xl"
                   />
                   <h3 className="h5 mt-6 mb-5">Security Guard</h3>
-                  
+
                 </div>
               </SwiperSlide>
               <SwiperSlide >
@@ -315,7 +326,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
                   <h3 className="h5 mt-6 mb-5">House Keeping</h3>
 
-                  
+
                 </div>
               </SwiperSlide>
               <SwiperSlide >
@@ -327,7 +338,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                     className="rounded-t-2xl" />
 
                   <h3 className="h5 mt-6 mb-5">Personal Bodyguard</h3>
-                  
+
 
                 </div>
               </SwiperSlide>
@@ -340,8 +351,8 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                     className="rounded-t-2xl"
                     alt="com." />
 
-                  <h3 className="h5 mt-6 mb-5">Security's</h3>
-                 
+                  <h3 className="h5 mt-6 mb-5">Security</h3>
+
 
                 </div>
               </SwiperSlide>
@@ -352,7 +363,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                     height={500}
                     className="rounded-t-2xl"
                     alt="com." />
-                  <h3 className="h5 mt-6 mb-5">PSO</h3>                 
+                  <h3 className="h5 mt-6 mb-5">PSO</h3>
                 </div>
               </SwiperSlide>
               <SwiperSlide >
@@ -366,7 +377,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
                   <h3 className="h5 mt-6 mb-5">Security Supervisor</h3>
 
-                  
+
                 </div>
               </SwiperSlide>
               <SwiperSlide >
@@ -384,19 +395,19 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
                   <h3 className="h5 mt-6 mb-5">Bouncer</h3>
 
-                  
+
                 </div>
               </SwiperSlide>
-             
+
 
             </Swiper>
-            
+
             <div className="relative mt-9 flex justify-center">
               <div className="pagination " ref={paginationRef}></div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 
@@ -525,121 +536,166 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
       </section>
       {/* End About */}
 
+    <Reviews />
+
+
       {/* Our Services */}
 
       <section className="pt-8">
         <div className="animate text-center">
-          {markdownify(servicehome.title, "h2", "mt-4 section-title")}
+          <p className="uppercase mt-8 " style={{ color: "blue", fontWeight: "700" }}>{servicehome.sub_title}</p>
+          {markdownify(servicehome.title, "h2", "mt-3 section-title")}
           {markdownify(servicehome.description, "p", "mt-10")}
-          {/* <p className="uppercase mt-8">{servicehome.sub_title}</p> */}
+
         </div>
         <div className="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-4 mt-5 container">
 
           <div className="max-w-sm  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-8">
             <a href="#">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security1.jpg" 
-              
-              alt="comsecurity" />
+              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security1.jpg"
+
+                alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY GUARD</h5>
+                <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY GUARD</h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Trained Security Guard</p>
-
+              <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Trained Security Guard</p>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Get Quote
+                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
             </div>
           </div>
 
 
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-8">
-            <a href="#">
+            <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security2.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>HOUSEKEEPING</h5>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
+                <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>HOUSEKEEPING</h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Best Quality Staff</p>
-
+              <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Best Quality Staff</p>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Get Quote
+                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
             </div>
           </div>
 
 
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
-            <a href="#">
+            <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security3.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY SUPERVISOR</h5>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
+                <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY SUPERVISOR</h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
-
+              <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Get Quote
+                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
             </div>
           </div>
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
-            <a href="#">
+            <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security4.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>PSO</h5>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
+                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>PSO</h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
-
+              <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Get Quote
+                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
             </div>
           </div>
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
-            <a href="#">
+            <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security1.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY'S</h5>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
+                <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITYS</h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
-
+              <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Get Quote
+                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
             </div>
           </div>
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
-            <a href="#">
+            <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security5.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>PERSONAL BODYGUARD</h5>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
+                <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>PERSONAL BODYGUARD</h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Fully Traned</p>
+              <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Fully Traned</p>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Get Quote
+                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
             </div>
           </div>
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
-            <a href="#">
+            <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security6.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>BOUNCER</h5>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
+                <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>BOUNCER</h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Knowledgeble Experts</p>
-
+              <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Knowledgeble Experts</p>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Get Quote
+                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
             </div>
           </div>
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
-            <a href="#">
+            <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/parking.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>Office Security</h5>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
+                <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>Office Security</h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Knowledgeble Experts</p>
-
+              <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Knowledgeble Experts</p>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Get Quote
+                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
             </div>
           </div>
 
@@ -737,7 +793,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                         • Discharge Book <br />
                         • Bio-Data<br />
                         • References.
-                        </p>
+                      </p>
 
                     </div>
                   </blockquote>
@@ -779,12 +835,10 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
       </section>
 
       <section className="section">
-      <Homecta />
+           <Testimonial />
       </section>
 
-      <section className="section">
-      <Officeadd />
-      </section>
+     
 
 
       {/* End Our Services */}
@@ -842,7 +896,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
       {/* End Why Choose Us */}
 
       {/* Testimonial */}
-      {/* <section className="section pt-0">
+      <section className="section pt-0">
         <div className="container">
           <div className="animate text-center">
             <p>{testimonial.subtitle}</p>
@@ -853,12 +907,12 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
             <div className="xl:col-11">
               <div className="row items-center justify-center">
                 <div className="hidden lg:col-3 xl:col-4 lg:block">
-                  <ImageFallback
+                  {/* <ImageFallback
                      src="/images/testimonials-01.png"
                     width={455}
                     height={522}
                     alt="testimonials"
-                  />
+                  /> */}
                 </div>
                 <div className="md:col-7 lg:col-6 xl:col-4">
                   {
@@ -914,19 +968,27 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                   </div>
                 </div>
                 <div className="hidden lg:col-3 xl:col-4 lg:block">
-                  <ImageFallback
+                  {/* <ImageFallback
                     src="/images/testimonials-02.png"
                     width={455}
                     height={522}
                     alt="testimonials"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
+
+      <section className="section">
+        <Homecta />
+      </section>
+
+      <section className="section">
+        <Officeadd />
+      </section>
       {/* Cta */}
       {/* <Cta /> */}
     </Base>

@@ -74,7 +74,7 @@ const Officeadd = () => {
                                         <h5 className="h4 mt-2">Head Office
                                             Tronica City</h5>
                                         <p className="mt-2">B-133, sec-A5/6, RMS Plaza Trans Delhi Signature City, Loni Ghaziabad-201103
-                                            Mob: +91 9718069976, +91 9355419326
+                                          <br />  Mob: +91 9718069976, +91 9355419326
                                             E-mail: comthfh@gmail.com</p>
                                     </div>
                                 </div>

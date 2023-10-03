@@ -7,7 +7,14 @@ const Contact = ({ data }) => {
   const { frontmatter } = data;
   const { title } = frontmatter;
 
+  // const onSubmit = async () => {
+  //   set
+  // })
+
+
   return (
+   
+    
     <section className="section sectiondomestic">
       {/* <Banner title={title} /> */}
       <div className="container">

@@ -1,10 +1,9 @@
 ---
 banner:
-  title: "WE PROVIDE VERIFIED & SECURED SERVICE FOR COMPANY"
-  subtitle: "The company envisages to provide total Security Solutions to corporate clients. “No Error” is our motto. Regular training and
-daily briefings are our way of doing things."
+  title: "COMSECURITY <br /> Security Guard Services"
+  subtitle: "On-call service 24/7. Our professional security services include <br /> security guards, bodyguards and patrol. CALL NOW!"
   # image: /images/banner-app.png
-  link:
+  link: 
     label: Get Premium Version
     href: "#"
 
@@ -64,8 +63,9 @@ features:
 
 
 #servicehome
-servicehome:
-  title:  What We Offer Here
+servicehome: 
+  title:  Security Guard Services
+  sub_title: OPEN 24/7
   description: Our Team comprises of security professionals with background in Armed Forces, Para Military Forces and Police.  Their <br />experience and insight within the security industry are unmatched. They have a knock for understanding the  discerning<br /> needs of our values clients Together, they form a pool immense knowledge and experience in security matters.
   title2: International Tours
 
@@ -95,9 +95,9 @@ speciality:
 
 
 #Testimonial
-testimonial:
-  title: OUR TESTIMONIALS
-  subtitle: Don’t Take Our Word For It
+testimonial:  
+  title: What Our Clients Say About Us
+  subtitle: OUR TESTIMONIALS
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas  Werat viverra id et aliquet. vulputate egestas sollicitudin.
   list:
     - author: David Cameron

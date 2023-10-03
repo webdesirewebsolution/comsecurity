@@ -18,7 +18,7 @@ const Share = ({ title, description, slug, className }) => {
           aria-label="facebook share button"
           href={`https://facebook.com/sharer/sharer.php?u=${base_url}/${slug}`}
           target="_blank"
-          // rel="noreferrer noopener"
+          rel="noreferrer noopener"
           button="true"
         >
           <IoLogoFacebook />
@@ -29,7 +29,7 @@ const Share = ({ title, description, slug, className }) => {
           aria-label="twitter share button"
           href={`https://twitter.com/intent/tweet/?text=${title}&amp;url=${base_url}/${slug}`}
           target="_blank"
-          // rel="noreferrer noopener"
+          rel="noreferrer noopener"
           button="true"
         >
           <IoLogoTwitter />
@@ -40,7 +40,7 @@ const Share = ({ title, description, slug, className }) => {
           aria-label="linkedin share button"
           href={`https://www.linkedin.com/shareArticle?mini=true&url=${base_url}/${slug}&title=${title}&summary=${description}&source=${base_url}`}
           target="_blank"
-          // rel="noreferrer noopener"
+          rel="noreferrer noopener"
         >
           <IoLogoLinkedin />
         </a>

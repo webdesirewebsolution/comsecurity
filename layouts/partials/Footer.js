@@ -13,15 +13,6 @@ const Footer = () => {
   
   return (
     <footer className="mt-8">
-      <style>
-        {
-          `
-          footer{
-            
-          }
-          `
-        }
-      </style>
       <div className="container">
         <div className="row border-y border-border py-12">
           <div className="animate md:col-6 lg:col-3">

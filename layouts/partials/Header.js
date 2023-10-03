@@ -46,7 +46,7 @@ const Header = () => {
   const { logo } = config.site;
     let socialiconstyle ={
       display:'flex',
-      justifyContent: "space-between"
+      justifyContent: "space-around"
     }
   return (
     <>
@@ -57,29 +57,33 @@ const Header = () => {
           }`}
         ref={headerRef}
       >
-        <div className="container-fluid mainheadtop" style={{backgroundColor:'red'}}>
+        <div className="container-fluid mainheadtop" style={{backgroundColor:'#f9f9f9'}}>
           <div className=" container " style={socialiconstyle}>
             
            <div className="" style={{display:'flex '}}>
-           <div className="text-center mt-1" style={{display:"flex"}}>           
-            <IoMail style={{color:"black", marginTop:"6px", marginRight:"10px"}}/>
-            <span> comthfh@gmail.com
+           <div className="text-center mt-1 me-4" style={{display:"flex"}}>           
+            <IoMail style={{color:"blue", marginTop:"8px", marginRight:"10px"}}/>
+            <Link href="comthfh@gmail.com" >
+            <h6 style={{fontSize:'14px', fontWeight:'500' }} className="p-0 mt-2"> comthfh@gmail.com
               <style>
                 {
                   `
                   span{
                     color: black;
                     font-size: initial;
+                    
                   }
                   `
                 }
               </style>
-            </span>
+            </h6>
+            </Link>
             </div>
-            <div className="text-center mt-1" style={{display:"flex", marginLeft:"18px"}}>
-            
-            <IoCall style={{color:"black", marginTop:"6px", marginRight:"10px"}}/>
-            <span> +91-9971565508
+            <div className="text-center mt-1 me-4" style={{display:"flex", marginLeft:"18px"}}>
+              
+            <IoCall style={{color:"blue", marginTop:"8px", marginRight:"10px"}}/>
+            <Link href="whatsapp://send?abid=91-9971565508&text=Hello%2C%20World!">
+            <h6 style={{fontSize:'14px', fontWeight:'500' }} className="p-0 mt-2"> +91-9971565508
               <style>
                 {
                   `
@@ -90,7 +94,8 @@ const Header = () => {
                   `
                 }
               </style>
-            </span>
+            </h6>
+            </Link>
             </div>
            </div>
 
