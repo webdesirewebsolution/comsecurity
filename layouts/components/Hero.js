@@ -1,14 +1,16 @@
 
+import React from "react";
+
 
 const Hero = () => {
     return (
         <>
-            <div class="pagehding-sec">
-                <div class="pagehding-overlay"></div>
-                <div class="container container1">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="page-heading">
+            <div className="pagehding-sec">
+                <div className="pagehding-overlay"></div>
+                <div className="container container1">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="page-heading">
                                 <h1 className="text-white">Services Page</h1>
                                 <ul className="text-white">
                                     <li className=""><a href="">Home </a> </li>

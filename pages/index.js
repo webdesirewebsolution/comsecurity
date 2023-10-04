@@ -18,7 +18,7 @@ import { IoMail, IoCall, IoLogoWhatsapp } from "react-icons/io5";
 import Image from "next/image";
 import Homecta from "@layouts/components/Homecta";
 import Officeadd from "@layouts/components/Officeadd";
-import Reviews from "@layouts/components/Reviews";
+// import Reviews from "@layouts/components/Reviews";
 import Testimonial from "@layouts/components/Testimonial";
 
 
@@ -173,11 +173,11 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
           <div className="mt-4 " >
             {/* <button type="submit" name="singlebutton" className="btn btn-white-bordered btn-lg inputbox inqbtn font-thin me-3" style={{ height: "52px",background: "transpare", }}>Contact Us</button> */}
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
-              <button class="me-3 bg-transparent hover:bg-white-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded" style={{ height: "52px" }}>
+              <button className="me-3 bg-transparent hover:bg-white-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded" style={{ height: "52px" }}>
                 Contact Us
               </button>
             </a>
-            <button class="me-3 bg-transparent hover:bg-white-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded" style={{ height: "52px" }}>
+            <button className="me-3 bg-transparent hover:bg-white-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded" style={{ height: "52px" }}>
               Read More
             </button>
             {/* <button type="submit" name="singlebutton" className="btn btn-primary btn-lg inputbox inqbtn font-thin" style={{ height: "52px" }}>Read More</button> */}
@@ -536,7 +536,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
       </section>
       {/* End About */}
 
-      <Reviews />
+      {/* <Reviews /> */}
 
 
       {/* Our Services */}
@@ -550,9 +550,16 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
         </div>
         <div className="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-4 mt-5 container">
 
-          <div className="max-w-sm  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-8">
+          <div className="max-w-sm  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-8
+          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+          {/* <div className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+  <img
+    src="https://tecdn.b-cdn.net/img/new/fluid/city/113.webp"
+    className="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+    alt="Louvre" />
+</div> */}
             <a href="#">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security1.jpg"
+              <Image width={500} height={500} className="rounded-t-lg  transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security1.jpg"
 
                 alt="comsecurity" />
             </a>
@@ -561,10 +568,10 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                 <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY GUARD</h5>
               </a>
               <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Trained Security Guard</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
-                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
               </a>
             </div>
@@ -572,19 +579,20 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
 
 
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-8">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-8
+          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security2.jpg" alt="comsecurity" />
+              <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security2.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
                 <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>HOUSEKEEPING</h5>
               </a>
               <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Best Quality Staff</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
-                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
               </a>
             </div>
@@ -592,108 +600,114 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
 
 
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8 
+          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security3.jpg" alt="comsecurity" />
+              <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security3.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
                 <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY SUPERVISOR</h5>
               </a>
               <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
-                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
               </a>
             </div>
           </div>
 
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8 
+          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security4.jpg" alt="comsecurity" />
+              <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security4.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>PSO</h5>
               </a>
               <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
-                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
               </a>
             </div>
           </div>
 
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8 
+          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security1.jpg" alt="comsecurity" />
+              <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security1.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
                 <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITYS</h5>
               </a>
               <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
-                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
               </a>
             </div>
           </div>
 
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8 
+          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security5.jpg" alt="comsecurity" />
+              <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security5.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
                 <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>PERSONAL BODYGUARD</h5>
               </a>
               <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Fully Traned</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
-                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
               </a>
             </div>
           </div>
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8 
+          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/security6.jpg" alt="comsecurity" />
+              <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security6.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
                 <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>BOUNCER</h5>
               </a>
               <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Knowledgeble Experts</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
-                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
               </a>
             </div>
           </div>
 
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8 
+          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
-              <Image width={500} height={500} className="rounded-t-lg" src="/images/comsecurity/services/parking.jpg" alt="comsecurity" />
+              <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/parking.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
                 <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>Office Security</h5>
               </a>
               <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Knowledgeble Experts</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
-                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
               </a>
             </div>
@@ -915,33 +929,13 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                           >
 
 
-                            {/* <div className="py-6 px-8 sm:py-12 md:px-10 lg:px-20 xl:px-12">
-                         
-                            <TbQuote className="mx-auto rotate-180 text-5xl text-body sm:text-6xl lg:text-8xl" />
-                            {markdownify(
-                              item.content,
-                              "p",
-                              "text-[17px] lg:text-lg text-body mt-4 md:mt-5 xl:mt-8"
-                            )}
-                             <div className="mt-7 inline-block rounded-md bg-body p-7 shadow-[0_10px_50px_rgba(0,0,0,.08)] md:mt-5 lg:mt-8 xl:mt-5">
-                              <ImageFallback
-                                className="mx-auto rounded-full"
-                                src={item.avatar}
-                                width={90}
-                                height={90}
-                                priority={true}
-                                alt={item.author}
-                              />
-                              <h6>{item.author}</h6>
-                              <p>{item.profession}</p>
-                            </div>
-                          </div> */}
+                           
                             <div>
                               <div
-                                class="block rounded-lg bg-white dark:bg-neutral-700 dark:shadow-black/30">
-                                <div class="h-28 overflow-hidden rounded-t-lg bg-[#9d789b]"></div>
+                                className="block rounded-lg bg-white dark:bg-neutral-700 dark:shadow-black/30">
+                                <div className="h-28 overflow-hidden rounded-t-lg bg-[#9d789b]"></div>
                                 <div
-                                  class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+                                  className="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
                                   {/* <img
                                   src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" /> */}
                                   {/* <div className="mt-7 inline-block rounded-md bg-body p-7 shadow-[0_10px_50px_rgba(0,0,0,.08)] md:mt-5 lg:mt-8 xl:mt-5"> */}
@@ -957,16 +951,16 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                                   {/* </div> */}
                                 </div>
 
-                                <div class="p-6">
-                                  {/* <h4 class="mb-4 text-2xl font-semibold">Maria Smantha</h4> */}
+                                <div className="p-6">
+                                  {/* <h4 className="mb-4 text-2xl font-semibold">Maria Smantha</h4> */}
                                   <h6>{item.author}</h6>
                                   <p>{item.profession}</p>
                                   <hr />
-                                  <p class="mt-4">
+                                 
                                     <svg
                                       xmlns="http://www.w3.org/2000/svg"
                                       fill="currentColor"
-                                      class="inline-block h-7 w-7 pr-2"
+                                      className="inline-block h-7 w-7 pr-2"
                                       viewBox="0 0 24 24">
                                       <path
                                         d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
@@ -977,7 +971,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                                       "p",
                                       // "text-[17px] lg:text-lg text-body mt-4 md:mt-5 xl:mt-8"
                                     )}
-                                  </p>
+                                
                                 </div>
                               </div>
                             </div>
