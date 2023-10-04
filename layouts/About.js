@@ -44,7 +44,7 @@ const About = ({ data }) => {
         {/* About */}
         <div className="section container">
           <div className="row items-center justify-center">
-            <div className="animate md:col-6 lg:col-5 md:order-2">
+            <div className="animate md:col-6 lg:col-6 md:order-2">
               <div className="about-image relative p-[60px]">
                 {/* <ImageFallback
                   className="animate relative w-full rounded-2xl"
@@ -65,7 +65,7 @@ const About = ({ data }) => {
               </div>
             </div>
             <div className="animate md:col-6 lg:col-4 md:order-1">
-              <p>{about_us.subtitle}</p>
+              <p style={{ color: "blue", fontWeight: "700" }}>{about_us.subtitle}</p>
               {markdownify(about_us.title, "h2", "section-title bar-left mt-4")}
               {markdownify(about_us.content, "p", "mt-10")}
             </div>
@@ -75,7 +75,7 @@ const About = ({ data }) => {
         {/* Works */}
         <div className="section container">
           <div className="animate text-center">
-            <p>{works.subtitle}</p>
+            <p style={{ color: "blue", fontWeight: "700" }}>{works.subtitle}</p>
             {markdownify(works.title, "h2", "section-title mt-4")}
             {markdownify(works.content, "p", "mt-10")}
           </div>
@@ -94,7 +94,7 @@ const About = ({ data }) => {
         {/* Mission */}
         <div className="section container">
           <div className="row items-center justify-center">
-            <div className="animate md:col-6 lg:col-5">
+            <div className="animate md:col-6 lg:col-6">
               <div className="about-image relative p-[60px]">
                 {/* <ImageFallback
                   className="animate relative w-full rounded-2xl"
@@ -143,8 +143,8 @@ const About = ({ data }) => {
                 />
               </div>
             </div>
-            <div className="animate md:col-6 lg:col-4">
-              <p>{mission.subtitle}</p>
+            <div className="animate md:col-6 lg:col-5">
+              <p style={{ color: "blue", fontWeight: "700" }}>{mission.subtitle}</p>
               {markdownify(mission.title, "h2", "section-title bar-left mt-4")}
               {markdownify(mission.content, "p", "mt-10")}
             </div>
@@ -316,8 +316,8 @@ const About = ({ data }) => {
         {/* Office */}
         <div className="section container">
           <div className="animate text-center">
-            <p>{our_office.subtitle}</p>
-            {markdownify(our_office.title, "h2", "section-title mt-4")}
+            <p style={{ color: "blue", fontWeight: "700" }}>{our_office.subtitle}</p>
+            {markdownify(our_office.title, "h4", "section-title mt-4")}
             {/* {markdownify(our_office.content, "p", "mt-16")} */}
           </div>
           <div className="row justify-center">

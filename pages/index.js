@@ -548,16 +548,11 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
           {markdownify(servicehome.description, "p", "mt-10")}
 
         </div>
-        <div className="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-4 mt-5 container">
+        <div className="grid mb-8  border-gray-200  shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-4 mt-5 container">
 
-          <div className="max-w-sm  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-8
+          <div className="max-w-sm  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-4
           relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
-          {/* <div className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
-  <img
-    src="https://tecdn.b-cdn.net/img/new/fluid/city/113.webp"
-    className="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-    alt="Louvre" />
-</div> */}
+           
             <a href="#">
               <Image width={500} height={500} className="rounded-t-lg  transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security1.jpg"
 
@@ -579,7 +574,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
 
 
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-8
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-4
           relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security2.jpg" alt="comsecurity" />
@@ -600,7 +595,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
 
 
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8 
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-4 
           relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security3.jpg" alt="comsecurity" />
@@ -619,7 +614,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
             </div>
           </div>
 
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8 
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-4 
           relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security4.jpg" alt="comsecurity" />
@@ -638,7 +633,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
             </div>
           </div>
 
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8 
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-4 
           relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security1.jpg" alt="comsecurity" />
@@ -657,7 +652,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
             </div>
           </div>
 
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8 
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-4 
           relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security5.jpg" alt="comsecurity" />
@@ -675,7 +670,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
               </a>
             </div>
           </div>
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8 
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-4 
           relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security6.jpg" alt="comsecurity" />
@@ -694,7 +689,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
             </div>
           </div>
 
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-8 
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-4 
           relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/parking.jpg" alt="comsecurity" />
@@ -897,7 +892,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
       {/* Testimonial */}
 
 
-      <section className="section pt-5" style={{backgroundColor:"#fbfbf6"}}>
+      <section className="section pt-5" style={{ backgroundColor: "#fbfbf6" }}>
         <div className="container " >
 
           <div className="animate row mt-10 items-center justify-center">
@@ -929,7 +924,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                           >
 
 
-                           
+
                             <div>
                               <div
                                 className="block rounded-lg bg-white dark:bg-neutral-700 dark:shadow-black/30">
@@ -956,22 +951,22 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                                   <h6>{item.author}</h6>
                                   <p>{item.profession}</p>
                                   <hr />
-                                 
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      fill="currentColor"
-                                      className="inline-block h-7 w-7 pr-2"
-                                      viewBox="0 0 24 24">
-                                      <path
-                                        d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
-                                    </svg>
-                                    {/* <TbQuote className="mx-auto rotate-180 text-5xl text-body sm:text-6xl lg:text-8xl" /> */}
-                                    {markdownify(
-                                      item.content,
-                                      "p",
-                                      // "text-[17px] lg:text-lg text-body mt-4 md:mt-5 xl:mt-8"
-                                    )}
-                                
+
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                    className="inline-block h-7 w-7 pr-2"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                      d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
+                                  </svg>
+                                  {/* <TbQuote className="mx-auto rotate-180 text-5xl text-body sm:text-6xl lg:text-8xl" /> */}
+                                  {markdownify(
+                                    item.content,
+                                    "p",
+                                    // "text-[17px] lg:text-lg text-body mt-4 md:mt-5 xl:mt-8"
+                                  )}
+
                                 </div>
                               </div>
                             </div>
@@ -990,7 +985,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                 </div>
                 <div className="animate lg:col-5 lg:order-1">
                   <div className="animate text-center">
-                    <p className="text-start" style={{color: "blue", fontWeight: "700"}}>{testimonial.subtitle}</p>
+                    <p className="text-start" style={{ color: "blue", fontWeight: "700" }}>{testimonial.subtitle}</p>
                     {/* <h2 className="mt-4 text-start ">{testimonial.title}</h2> */}
                     {markdownify(testimonial.title, "h2", "mt-4  text-start")}
                     {/* {markdownify(testimonial.description, "p", "mt-10")} */}
@@ -1076,7 +1071,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
 
       {/* <section className="section mt-5"> */}
-        <Homecta />
+      <Homecta />
       {/* </section> */}
 
       <section className="section">
