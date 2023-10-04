@@ -328,7 +328,7 @@ const About = ({ data }) => {
                     key={("country-", index)}
                     className="animate mt-10 md:col-8 xl:col-4"
                   >
-                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{minHeight:"162px"}}>
                       {/* <ImageFallback
                         // className="mx-auto"
                         src={country.flag}

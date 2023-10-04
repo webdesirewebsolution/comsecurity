@@ -69,7 +69,7 @@ const Officeadd = () => {
 
                                     className="animate mt-10 md:col-8 xl:col-4"
                                 >
-                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{minHeight:"182px"}}>
 
                                         <h5 className="h4 mt-2">Head Office
                                             Tronica City</h5>
@@ -85,7 +85,7 @@ const Officeadd = () => {
 
                                     className="animate mt-10 md:col-8 xl:col-4"
                                 >
-                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]"  style={{minHeight:"182px"}}>
 
                                         <h5 className="h4 mt-2">Branch Office
                                             Noida
@@ -100,7 +100,7 @@ const Officeadd = () => {
 
                                     className="animate mt-10 md:col-8 xl:col-4"
                                 >
-                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]"  style={{minHeight:"182px"}}>
 
                                         <h5 className="h4 mt-2">Branch Office
                                             Haryana

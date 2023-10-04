@@ -715,8 +715,8 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
       {/* why choose */}
 
       <section >
-        <div className="">
-          <div className="row items-center  " style={{ backgroundColor: "#ddd" }}>
+        {/* <div > */}
+          <div className="row items-center me-0 " style={{ backgroundColor: "#ddd" }}>
             <div className="animate lg:col-6 lg:order-1">
               <Image
                 className="mx-auto"
@@ -727,15 +727,8 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
               />
             </div>
             <div className="animate lg:col-5 lg:order-2 " style={{ backgroundColor: "#ddd" }}>
-              {/* {markdownify(
-                  speciality.primary.title,
-                  "h2",
-                  "mt-4 section-title bar-left"
-                )} */}
               <div className="  flex mb-6 mt-5"> <h2 className="" style={{ color: "red", marginRight: "10px" }}>Why</h2><h2> Choose Us</h2></div>
-
-
-              <div className="grid  md:grid-cols-2 " >
+          <div className="grid  md:grid-cols-2 " >
                 <figure className="flex flex-col      ">
                   <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
 
@@ -833,7 +826,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
               </div>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </section>
       {/* End Our Services */}
 
