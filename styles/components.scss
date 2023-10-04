@@ -733,3 +733,70 @@
 .my-float{
 	margin-top:16px;
 }
+
+
+
+.pagehding-sec {
+  background-image: url('../public/images/comsecurity/herobg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  position: relative;
+  background-size: cover;
+}
+.pagehding-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+@media (min-width: 1200px){
+.container1 {
+  width: 1170px;
+}
+}
+@media (min-width: 992px){
+.container1 {
+  width: 970px;
+}
+}
+@media (min-width: 750px){
+  .container1 {
+      width: 970px;
+  }
+  }
+
+  
+  .page-heading h1 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+.page-heading li {
+  display: inline-block;
+  position: relative;
+  padding: 0px 14px;
+  text-align: center;
+  font-size: 14px;
+}
+.page-heading ul {
+  
+  text-align: center;
+}
+.page-heading li:last-child a {
+  color: #EE3238;
+}
+.page-heading li::before {
+  content: "/";
+  height: 60%;
+  position: absolute;
+  right: -5px;
+  top: 0px;
+  color: #fff;
+}

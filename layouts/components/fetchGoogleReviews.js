@@ -1,17 +1,17 @@
 import axios from 'axios';
 
-async function fetchGoogleReviews(accountId, locationId) {
+async function fetchGoogleReviews(apiKey, accountId, locationId) {
   try {
     // Construct the API URL
-    const apiUrl = `https://developers.google.com/my-business/reference/rest/v4/accounts.locations.reviews`;
+    const apiUrl = `https://mybusiness.googleapis.com/v4/accounts/${accountId}/locations/${locationId}/reviews`;
 
-    // Add any necessary headers, such as authorization headers
-    const headers = {
-      'Authorization': `Bearer YOUR_ACCESS_TOKEN`, // Replace with your access token
+    // Add the API key as a query parameter
+    const queryParams = {
+      key: apiKey, // Replace with your Google API Key
     };
 
     // Make the GET request
-    const response = await axios.get(apiUrl, { headers });
+    const response = await axios.get(apiUrl, { params: queryParams });
 
     // Handle the response data
     if (response.status === 200) {

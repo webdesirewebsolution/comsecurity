@@ -5,6 +5,7 @@ import readingTime from "@lib/utils/readingTime";
 import Link from "next/link";
 import Banner from "../components/Banner";
 import Image from 'next/image'
+import Hero from "@layouts/components/Hero";
 
 const Services = ({ data }) => {
   const { frontmatter } = data;
@@ -14,13 +15,13 @@ const Services = ({ data }) => {
     <>
       <section className="">
         {/* <Banner title={title} /> */}
-
+        <Hero />
         <div className="section container">
           <div className="row items-center justify-center">
             <div className="animate md:col-6 lg:col-5 md:order-2">
               <div className="about-image relative p-[60px]">
                 <Image
-                  src="/images/comsecurity/services/sguard.jpg"
+                  src="/images/comsecurity/services/securityguard.jpg"
                   width={600}
                   height={600}
                   alt=""
@@ -42,7 +43,7 @@ const Services = ({ data }) => {
             <div className="animate md:col-6 lg:col-5 md:order-1">
               <div className="about-image relative p-[60px]">
                 <Image
-                  src="/images/comsecurity/services/ssupervisor.jpg"
+                  src="/images/comsecurity/services/securitysuper.jpg"
                   width={600}
                   height={600}
                   alt=""

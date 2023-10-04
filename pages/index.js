@@ -173,10 +173,10 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
           <div className="mt-4 " >
             {/* <button type="submit" name="singlebutton" className="btn btn-white-bordered btn-lg inputbox inqbtn font-thin me-3" style={{ height: "52px",background: "transpare", }}>Contact Us</button> */}
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
-           <button class="me-3 bg-transparent hover:bg-white-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded" style={{ height: "52px" }}>
-              Contact Us
-            </button>
-           </a>
+              <button class="me-3 bg-transparent hover:bg-white-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded" style={{ height: "52px" }}>
+                Contact Us
+              </button>
+            </a>
             <button class="me-3 bg-transparent hover:bg-white-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded" style={{ height: "52px" }}>
               Read More
             </button>
@@ -536,7 +536,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
       </section>
       {/* End About */}
 
-    <Reviews />
+      <Reviews />
 
 
       {/* Our Services */}
@@ -822,25 +822,10 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
                 </figure>
               </div>
-
-
-
-
-
-
-
             </div>
           </div>
         </div>
       </section>
-
-      <section className="section">
-           <Testimonial />
-      </section>
-
-     
-
-
       {/* End Our Services */}
 
       {/* Why Choose Us */}
@@ -896,7 +881,133 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
       {/* End Why Choose Us */}
 
       {/* Testimonial */}
-      <section className="section pt-0">
+
+
+      <section className="section pt-5" style={{backgroundColor:"#fbfbf6"}}>
+        <div className="container " >
+
+          <div className="animate row mt-10 items-center justify-center">
+            <div className="xl:col-11">
+              <div className="row items-center justify-center">
+
+                <div className="md:col-6 lg:col-6 xl:col-6  shadow-lg pe-0 ps-0 lg:order-2">
+                  <div className="">
+                    {
+                      <Swiper
+                        modules={[Pagination, Autoplay]}
+                        pagination={{
+                          el: testimonialPaginationRef.current,
+                          type: "bullets",
+                          dynamicBullets: true,
+                          clickable: true,
+                        }}
+                        autoplay={{ delay: 3000 }}
+                        onBeforeInit={(swiper) => {
+                          swiper.params.pagination.el =
+                            testimonialPaginationRef.current;
+                        }}
+                        className="testimonial-slider mx-auto  cursor-pointer lg:max-w-[650px]"
+                      >
+                        {testimonial.list.map((item, index) => (
+                          <SwiperSlide
+                            className="text-center"
+                            key={"testimonial-" + index}
+                          >
+
+
+                            {/* <div className="py-6 px-8 sm:py-12 md:px-10 lg:px-20 xl:px-12">
+                         
+                            <TbQuote className="mx-auto rotate-180 text-5xl text-body sm:text-6xl lg:text-8xl" />
+                            {markdownify(
+                              item.content,
+                              "p",
+                              "text-[17px] lg:text-lg text-body mt-4 md:mt-5 xl:mt-8"
+                            )}
+                             <div className="mt-7 inline-block rounded-md bg-body p-7 shadow-[0_10px_50px_rgba(0,0,0,.08)] md:mt-5 lg:mt-8 xl:mt-5">
+                              <ImageFallback
+                                className="mx-auto rounded-full"
+                                src={item.avatar}
+                                width={90}
+                                height={90}
+                                priority={true}
+                                alt={item.author}
+                              />
+                              <h6>{item.author}</h6>
+                              <p>{item.profession}</p>
+                            </div>
+                          </div> */}
+                            <div>
+                              <div
+                                class="block rounded-lg bg-white dark:bg-neutral-700 dark:shadow-black/30">
+                                <div class="h-28 overflow-hidden rounded-t-lg bg-[#9d789b]"></div>
+                                <div
+                                  class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+                                  {/* <img
+                                  src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" /> */}
+                                  {/* <div className="mt-7 inline-block rounded-md bg-body p-7 shadow-[0_10px_50px_rgba(0,0,0,.08)] md:mt-5 lg:mt-8 xl:mt-5"> */}
+                                  <ImageFallback
+                                    className=""
+                                    src={item.avatar}
+                                    width={90}
+                                    height={90}
+                                    priority={true}
+                                    alt={item.author}
+                                  />
+
+                                  {/* </div> */}
+                                </div>
+
+                                <div class="p-6">
+                                  {/* <h4 class="mb-4 text-2xl font-semibold">Maria Smantha</h4> */}
+                                  <h6>{item.author}</h6>
+                                  <p>{item.profession}</p>
+                                  <hr />
+                                  <p class="mt-4">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="currentColor"
+                                      class="inline-block h-7 w-7 pr-2"
+                                      viewBox="0 0 24 24">
+                                      <path
+                                        d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
+                                    </svg>
+                                    {/* <TbQuote className="mx-auto rotate-180 text-5xl text-body sm:text-6xl lg:text-8xl" /> */}
+                                    {markdownify(
+                                      item.content,
+                                      "p",
+                                      // "text-[17px] lg:text-lg text-body mt-4 md:mt-5 xl:mt-8"
+                                    )}
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                          </SwiperSlide>
+                        ))}
+                      </Swiper>
+                    }
+                    <div className="relative h-8">
+                      <div
+                        className="pagination absolute left-1/2 -translate-x-1/2"
+                        ref={testimonialPaginationRef}
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="animate lg:col-5 lg:order-1">
+                  <div className="animate text-center">
+                    <p className="text-start" style={{color: "blue", fontWeight: "700"}}>{testimonial.subtitle}</p>
+                    {/* <h2 className="mt-4 text-start ">{testimonial.title}</h2> */}
+                    {markdownify(testimonial.title, "h2", "mt-4  text-start")}
+                    {/* {markdownify(testimonial.description, "p", "mt-10")} */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <section className="section pt-5">
         <div className="container">
           <div className="animate text-center">
             <p>{testimonial.subtitle}</p>
@@ -905,15 +1016,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
           </div>
           <div className="animate row mt-10 items-center justify-center">
             <div className="xl:col-11">
-              <div className="row items-center justify-center">
-                <div className="hidden lg:col-3 xl:col-4 lg:block">
-                  {/* <ImageFallback
-                     src="/images/testimonials-01.png"
-                    width={455}
-                    height={522}
-                    alt="testimonials"
-                  /> */}
-                </div>
+              <div className="row items-center justify-center">              
                 <div className="md:col-7 lg:col-6 xl:col-4">
                   {
                     <Swiper
@@ -936,14 +1039,17 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                           className="text-center"
                           key={"testimonial-" + index}
                         >
+                          
+                          
                           <div className="py-6 px-8 sm:py-12 md:px-10 lg:px-20 xl:px-12">
+                         
                             <TbQuote className="mx-auto rotate-180 text-5xl text-body sm:text-6xl lg:text-8xl" />
                             {markdownify(
                               item.content,
                               "p",
                               "text-[17px] lg:text-lg text-body mt-4 md:mt-5 xl:mt-8"
                             )}
-                            <div className="mt-7 inline-block rounded-md bg-body p-7 shadow-[0_10px_50px_rgba(0,0,0,.08)] md:mt-5 lg:mt-8 xl:mt-5">
+                             <div className="mt-7 inline-block rounded-md bg-body p-7 shadow-[0_10px_50px_rgba(0,0,0,.08)] md:mt-5 lg:mt-8 xl:mt-5">
                               <ImageFallback
                                 className="mx-auto rounded-full"
                                 src={item.avatar}
@@ -956,6 +1062,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                               <p>{item.profession}</p>
                             </div>
                           </div>
+                         
                         </SwiperSlide>
                       ))}
                     </Swiper>
@@ -966,25 +1073,17 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                       ref={testimonialPaginationRef}
                     ></div>
                   </div>
-                </div>
-                <div className="hidden lg:col-3 xl:col-4 lg:block">
-                  {/* <ImageFallback
-                    src="/images/testimonials-02.png"
-                    width={455}
-                    height={522}
-                    alt="testimonials"
-                  /> */}
-                </div>
+                </div>           
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
-      <section className="section">
+      {/* <section className="section mt-5"> */}
         <Homecta />
-      </section>
+      {/* </section> */}
 
       <section className="section">
         <Officeadd />

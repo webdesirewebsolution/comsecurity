@@ -23,6 +23,22 @@ const About = ({ data }) => {
 
   return (
     <>
+      <div class="pagehding-sec">
+                <div class="pagehding-overlay"></div>
+                <div class="container container1">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="page-heading">
+                                <h1 className="text-white">About Page</h1>
+                                <ul className="text-white">
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">About Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
       <section className="section pt-0">
         {/* <Banner title={title} /> */}
         {/* About */}

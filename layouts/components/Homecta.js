@@ -7,10 +7,10 @@ const Homecta = () => {
     //   const { title } = frontmatter;
 
     return (
-        <section className="section sectiondomestic">
-            {/* <Banner title={title} /> */}
-            <div className="container">
-                <div className="section row items-center justify-center">
+        <section className="section ">
+           
+            <div className="container ">
+                <div className=" row items-center justify-center">
                     <div className="animate lg:col-5">
                         <div>
                             <h3>
@@ -96,7 +96,7 @@ const Homecta = () => {
                     </div>
                 </div>
             </div>
-        </section>
+         </section>
     );
 };
 
