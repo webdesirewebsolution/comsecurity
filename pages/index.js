@@ -891,7 +891,14 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
           <div className="animate row mt-10 items-center justify-center">
             <div className="xl:col-11">
               <div className="row items-center justify-center">
-
+              <div className="animate lg:col-5 lg:order-1">
+                  <div className="animate text-center">
+                    <p className="text-start" style={{ color: "blue", fontWeight: "700" }}>{testimonial.subtitle}</p>
+                    {/* <h2 className="mt-4 text-start ">{testimonial.title}</h2> */}
+                    {markdownify(testimonial.title, "h2", "mt-4  text-start")}
+                    {/* {markdownify(testimonial.description, "p", "mt-10")} */}
+                  </div>
+                </div>
                 <div className="md:col-6 lg:col-6 xl:col-6  shadow-lg pe-0 ps-0 lg:order-2">
                   <div className="">
                     {
@@ -915,9 +922,6 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                             className="text-center"
                             key={"testimonial-" + index}
                           >
-
-
-
                             <div>
                               <div
                                 className="block rounded-lg bg-white dark:bg-neutral-700 dark:shadow-black/30">
@@ -976,14 +980,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                     </div>
                   </div>
                 </div>
-                <div className="animate lg:col-5 lg:order-1">
-                  <div className="animate text-center">
-                    <p className="text-start" style={{ color: "blue", fontWeight: "700" }}>{testimonial.subtitle}</p>
-                    {/* <h2 className="mt-4 text-start ">{testimonial.title}</h2> */}
-                    {markdownify(testimonial.title, "h2", "mt-4  text-start")}
-                    {/* {markdownify(testimonial.description, "p", "mt-10")} */}
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
