@@ -24,12 +24,24 @@
       "url": "/"
     },
     {
+      "name": "About Us",
+      "url": "/about"
+    },
+    {
       "name": "Services",
       "url": "/services"
     },
     {
-      "name": "Contact",
+      "name": "Contact Us",
       "url": "/contact"
+    },
+    {
+      "name": "Privacy Policy",
+      "url": "/"
+    },
+    {
+      "name": "Terms and Condition",
+      "url": "/"
     }
   ]
 }

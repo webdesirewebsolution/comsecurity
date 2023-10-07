@@ -66,7 +66,7 @@ features:
 servicehome: 
   title:  Security Guard Services
   sub_title: OPEN 24/7
-  description: Our Team comprises of security professionals with background in Armed Forces, Para Military Forces and Police.  Their <br />experience and insight within the security industry are unmatched. They have a knock for understanding the  discerning<br /> needs of our values clients Together, they form a pool immense knowledge and experience in security matters.
+  description: At COM SECURITY, we offer expert security guard services. Our highly trained professionals provide armed and  unarmed <br />security, event security, commercial and residential protection, and more. With state-of-the-art technology <br /> and a proactive approach, we ensure your safety and peace of mind. Contact us for customized security solutions. 
   title2: International Tours
 
 
@@ -83,7 +83,7 @@ speciality:
   primary:
     title: About Our Company
     subtitle: PRIMARY SPECIALITY
-    description: The company envisages to provide total Security Solutions to corporate clients. “No Error” is our motto. Regular training and daily briefings are our way of doing things. We endeavour to provide best suited security manpower for specific requirements and integrate it with state of the art electronic surveillance systems.
+    description: Welcome to COM SECURITY, where safety meets expertise. Our seasoned security professionals are dedicated to safeguarding your peace of mind and assets. With years of experience and rigorous training, our team offers a proactive approach to security challenges, utilizing state-of-the-art technology and a commitment to customization. Whether you need armed or unarmed guards, event security, commercial protection, residential safety, construction site security, or retail asset protection, we've got you covered. Our professionalism, combined with excellent customer service and access control solutions, ensures a secure environment tailored to your unique needs. Contact us today, and let us create a personalized security plan that prioritizes your safety and peace of mind around the clock. Your security is our mission.
     image: /images/features-01.png
   secondary:
     title: Say Hello To No-Code The Advance Creation

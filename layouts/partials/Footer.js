@@ -21,7 +21,7 @@ const Footer = () => {
             {markdownify(footer_content, "p", "mt-3 text-white")}
           </div>
           <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
-            <h3 className="h5" style={{color:"blue"}}>Services</h3>
+            <h3 className="h5" style={{color:"white"}}>Services</h3>
             <div className="mt-5">
             <ul className="mt-5 leading-10">
             <li >
@@ -76,7 +76,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
-            <h3 className="h5" style={{color:"blue"}}>Quick Links</h3>
+            <h3 className="h5" style={{color:"white"}}>Quick Links</h3>
             {/* footer menu */}
             <ul className="mt-5 leading-10">
               {menu.footer.map((menu) => (
@@ -92,7 +92,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
-            <h3 className="h5" style={{color:"blue"}}> Contact</h3>
+            <h3 className="h5" style={{color:"white"}}> Contact</h3>
             <ul className="mt-5 leading-10">
               {/* <li>{markdownify(location)}</li> */}
               <p style={{color:"white"}}> comthfh@gmail.com</p>

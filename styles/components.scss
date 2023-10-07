@@ -372,10 +372,8 @@
 
 @media (min-width: 1024px) and (max-width: 3000px) {
   .bg-textt {
-    
     color: white;
     font-weight: bold;
-  
     position: absolute;
     top: 50%;
     left: 50%;
@@ -402,7 +400,7 @@
     text-align: center;
   }
 }
-@media (min-width: 490px)and (max-width: 767px) {
+@media (min-width: 481px)and (max-width: 767px) {
   .bg-textt {
     
     color: white;
@@ -418,19 +416,44 @@
     text-align: center;
   }
 }
-@media (max-width: 480px) {
-  .bg-textt {
-    
+@media (min-width: 450px)and (max-width: 480px) {
+  .bg-textt {   
     color: white;
     font-weight: bold;
-  
     position: absolute;
-    top: 24%;
+    top: 29%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 100%;
     padding: 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 420px)and (max-width: 449px) {
+  .bg-textt {   
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    
+    text-align: center;
+  }
+}
+@media (max-width: 419px) {
+  .bg-textt {   
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
     text-align: center;
   }
 }

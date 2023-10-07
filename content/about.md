@@ -7,7 +7,7 @@ draft: false
 about_us:
   subtitle: WHO WE ARE
   title: Security Solutions
-  content: Our Team comprises of security professionals with background in Armed Forces, Para Military Forces and Police. Their experience and insinght within the security industry are unmatched. They have a knock for understanding the discerning needs of our values clients. Together, they from a pool immense knowledge and experience in security matters.
+  content: Welcome to COM SECURITY, where safety meets expertise. Our seasoned security professionals are dedicated to safeguarding your peace of mind and assets. With years of experience and rigorous training, our team offers a proactive approach to security challenges, utilizing state-of-the-art technology and a commitment to customization. Whether you need armed or unarmed guards, event security, commercial protection, residential safety, construction site security, or retail asset protection, we've got you covered. Our professionalism, combined with excellent customer service and access control solutions, ensures a secure environment tailored to your unique needs. Contact us today, and let us create a personalized security plan that prioritizes your safety and peace of mind around the clock. Your security is our mission.
   image: /images/about/01.jpg
 
 ## our works

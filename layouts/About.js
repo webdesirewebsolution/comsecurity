@@ -54,7 +54,7 @@ const About = ({ data }) => {
                   alt=""
                 /> */}
                 <Image
-                  src="/images/comsecurity/services/aboutcom.jpg"
+                  src="/images/comsecurity/services/securityguard.jpg"
                   width={600}
                   height={600}
                   alt=""

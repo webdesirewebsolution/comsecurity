@@ -20,9 +20,67 @@ import Homecta from "@layouts/components/Homecta";
 import Officeadd from "@layouts/components/Officeadd";
 // import Reviews from "@layouts/components/Reviews";
 import Testimonial from "@layouts/components/Testimonial";
+// mail
+import { useState } from "react";
+import { sendContactForm } from "../lib/api";
+import Contactform from "@layouts/components/Contactform";
 
+
+
+const initValues = { name: "", email: "", subject: "", message: "" };
+
+const initState = { isLoading: false, error: "", values: initValues };
 
 const Home = ({ banner, brands, features, intro, speciality, testimonial, servicehome }) => {
+
+
+  // mail
+  // const toast = useToast();
+  const [state, setState] = useState(initState);
+  const [touched, setTouched] = useState({});
+
+  const { values } = state;
+
+  const onBlur = ({ target }) =>
+    setTouched((prev) => ({ ...prev, [target.name]: true }));
+
+  const handleChange = ({ target }) =>
+    setState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }));
+
+  const onSubmit = async () => {
+    console.log(values);
+    setState((prev) => ({
+      ...prev,
+      isLoading: true,
+    }));
+    try {
+      await sendContactForm(values);
+      setTouched({});
+      setState(initState);
+      toast({
+        title: "Message sent.",
+        status: "success",
+        duration: 2000,
+        position: "top",
+      });
+    } catch (error) {
+      setState((prev) => ({
+        ...prev,
+        isLoading: false,
+        error: error.message,
+      }));
+    }
+  };
+
+
+
+
   const paginationRef = useRef(null);
   const testimonialPaginationRef = useRef(null);
 
@@ -39,12 +97,12 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
         { y: 20, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.5, delay: 0.5 }
       )
-        .fromTo(
-          ".banner-btn",
-          { y: 20, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.5 },
-          ">-0.4"
-        )
+      // .fromTo(
+      //   ".banner-btn",
+      //   { y: 20, opacity: 0 },
+      //   { y: 0, opacity: 1, duration: 0.5 },
+      //   ">-0.4"
+      // )
       // .fromTo(
       //   ".banner-img",
       //   {
@@ -114,6 +172,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
 
   return (
+
     <Base>
       {/* <div id="mySidenav" className="sidenav fixed-top">
                 <a href="#" id="blog" className="trxt-dark">Contact</a>
@@ -126,35 +185,10 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
       {/* Home Banner */}
 
-      <section className="section banner pt-0 pb-0" style={{ marginTop: "-38px" }}>
-        {/* <div className="container-xl">
-          <div className=" relative">
-            <div className="bg-theme banner-bg bannerimg absolute top-0 left-0">
-              <Image src="./images/rockbanner12.jpg" 
-                className="heroimg"
-              >              
-              </img>
-            </div>
-            <div className="row overflow-hidden ">
-              <div className="col-12">
-                <div className="row relative justify-center pb-10">
-                  <div className="banner-content col-10 pt-20 pb-10 text-center textbannertop mt-8" >
-                    {markdownify(
-                      banner.title, 
-                      "h1",
-                      " banner-title opacity-0 text-white"
-                      
-                    )}
-                    
-                    
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
 
-          </div>
-        </div> */}
+
+
+      <section className="section banner pt-0 pb-0" style={{ marginTop: "-38px" }}>
         <div className="bg-image">
         </div>
         <div className="bg-textt">
@@ -171,16 +205,16 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
             )}
           </div>
           <div className="mt-4 " >
-            {/* <button type="submit" name="singlebutton" className="btn btn-white-bordered btn-lg inputbox inqbtn font-thin me-3" style={{ height: "52px",background: "transpare", }}>Contact Us</button> */}
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
-              <button className="me-3 bg-transparent hover:bg-white-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded" style={{ height: "52px" }}>
+              <button className="me-3 bg-transparent hover:bg-red-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded" style={{ height: "52px" }}>
                 Contact Us
               </button>
             </a>
-            <button className="me-3 bg-transparent hover:bg-white-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded" style={{ height: "52px" }}>
-              Read More
-            </button>
-            {/* <button type="submit" name="singlebutton" className="btn btn-primary btn-lg inputbox inqbtn font-thin" style={{ height: "52px" }}>Read More</button> */}
+            <Link href="/about" >
+              <button className="me-3 bg-transparent hover:bg-red-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded" style={{ height: "52px" }}>
+                Read More
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -497,25 +531,20 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
               />
             </div>
             <div className="animate lg:col-5 lg:order-1">
-              {/* {markdownify(
-                speciality.primary.title,
-                "h2",
-                "mt-4 section-title bar-left"
-              )} */}
-              <div className="mt-4 section-title bar-left flex"> <h2 className="" style={{ color: "red", marginRight: "10px" }}>About</h2> <h2>Our Company</h2></div>
-              {markdownify(speciality.primary.description, "p", "mt-10")}
+              <div className="mt-4 section-title bar-left flex"> <h3 className="" style={{ color: "red", marginRight: "10px" }}>About</h3> <h3 className="">Our Company</h3></div>
+              {markdownify(speciality.primary.description, "p", "mt-10 text-justify")}
               <div className="grid grid-cols-3 gap-4 mt-8">
                 <div className="">
                   <div>
-                    <h2>250</h2>
+                    <h2>250+</h2>
                   </div>
                   <div className="mt-3">
-                    <h6>Projects Done</h6>
+                    <h6>Area Serving</h6>
                   </div>
                 </div>
                 <div className="">
                   <div>
-                    <h2>260</h2>
+                    <h2>260+</h2>
                   </div>
                   <div className="mt-3">
                     <h6>Happy Client</h6>
@@ -523,7 +552,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                 </div>
                 <div className="">
                   <div>
-                    <h2>240</h2>
+                    <h2>240+</h2>
                   </div>
                   <div className="mt-3">
                     <h6>Our Employees</h6>
@@ -551,8 +580,8 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
         <div className="grid mb-8  border-gray-200  shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-4 mt-5 container">
 
           <div className="max-w-sm  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-4
-          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
-           
+          relative max-w-md overflow-hidden bg-cover bg-no-repeat">
+
             <a href="#">
               <Image width={500} height={500} className="rounded-t-lg  transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security1.jpg"
 
@@ -563,8 +592,11 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                 <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY GUARD</h5>
               </a>
               <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Trained Security Guard</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="hover:text-white bg-transparent border border-red-500  hover:bg-red-500  inline-flex items-center px-3 py-2 text-sm font-small text-center text-dark  bg-blue-700 rounded-2xl  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
+                {/* <button className="me-3 bg-transparent hover:bg-red-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded" style={{ height: "52px" }}>
+                Contact Us
+              </button> */}
                 <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
@@ -575,7 +607,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-4
-          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+          relative max-w-md overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security2.jpg" alt="comsecurity" />
             </a>
@@ -584,7 +616,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                 <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>HOUSEKEEPING</h5>
               </a>
               <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Best Quality Staff</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="hover:text-white bg-transparent border border-red-500  hover:bg-red-500 inline-flex items-center px-3 py-2 text-sm font-small text-center text-dark bg-blue-700 rounded-2xl hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
                 <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -596,7 +628,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-4 
-          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+          relative max-w-md overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security3.jpg" alt="comsecurity" />
             </a>
@@ -604,8 +636,8 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
               <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
                 <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY SUPERVISOR</h5>
               </a>
-              <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Knowledgeble Experts</p>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="hover:text-white bg-transparent border border-red-500  hover:bg-red-500 inline-flex items-center px-3 py-2 text-sm font-small text-center text-dark bg-blue-700 rounded-2xl hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
                 <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -615,7 +647,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
           </div>
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-4 
-          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+          relative max-w-md overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security4.jpg" alt="comsecurity" />
             </a>
@@ -624,7 +656,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>PSO</h5>
               </a>
               <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="hover:text-white bg-transparent border border-red-500  hover:bg-red-500 inline-flex items-center px-3 py-2 text-sm font-small text-center text-dark bg-blue-700 rounded-2xl hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
                 <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -634,7 +666,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
           </div>
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-4 
-          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+          relative max-w-md overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security1.jpg" alt="comsecurity" />
             </a>
@@ -643,7 +675,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                 <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITYS</h5>
               </a>
               <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Authorized License</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="hover:text-white bg-transparent border border-red-500  hover:bg-red-500 inline-flex items-center px-3 py-2 text-sm font-small text-center text-dark bg-blue-700 rounded-2xl hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
                 <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -653,7 +685,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
           </div>
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-4 
-          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+          relative max-w-md overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security5.jpg" alt="comsecurity" />
             </a>
@@ -662,7 +694,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                 <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>PERSONAL BODYGUARD</h5>
               </a>
               <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Fully Traned</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="hover:text-white bg-transparent border border-red-500  hover:bg-red-500 inline-flex items-center px-3 py-2 text-sm font-small text-center text-dark bg-blue-700 rounded-2xl hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
                 <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -671,7 +703,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
             </div>
           </div>
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-4 
-          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+          relative max-w-md overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security6.jpg" alt="comsecurity" />
             </a>
@@ -679,8 +711,8 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
               <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
                 <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>BOUNCER</h5>
               </a>
-              <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Knowledgeble Experts</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">The Ultimate Protector</p>
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="hover:text-white bg-transparent border border-red-500  hover:bg-red-500 inline-flex items-center px-3 py-2 text-sm font-small text-center text-dark bg-blue-700 rounded-2xl hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
                 <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -690,7 +722,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
           </div>
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-4 
-          relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+          relative max-w-md overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
               <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/parking.jpg" alt="comsecurity" />
             </a>
@@ -699,7 +731,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                 <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>Office Security</h5>
               </a>
               <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Knowledgeble Experts</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-small text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="hover:text-white bg-transparent border border-red-500  hover:bg-red-500 inline-flex items-center px-3 py-2 text-sm font-small text-center text-dark bg-blue-700 rounded-2xl hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
                 <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -716,116 +748,120 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
 
       <section >
         {/* <div > */}
-          <div className="row items-center me-0 " style={{ backgroundColor: "#ddd" }}>
-            <div className="animate lg:col-6 lg:order-1">
-              <Image
-                className="mx-auto"
-                src="/images/about/comabout12.png"
-                width={673}
-                height={500}
-                alt="primary speciality"
-              />
-            </div>
-            <div className="animate lg:col-5 lg:order-2 " style={{ backgroundColor: "#ddd" }}>
-              <div className="  flex mb-6 mt-5"> <h2 className="" style={{ color: "red", marginRight: "10px" }}>Why</h2><h2> Choose Us</h2></div>
-          <div className="grid  md:grid-cols-2 " >
-                <figure className="flex flex-col      ">
-                  <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+        <div className="row items-center me-0 " style={{ backgroundColor: "#ddd" }}>
+          <div className="animate lg:col-6 lg:order-1">
+            <Image
+              className="mx-auto"
+              src="/images/about/comabout12.png"
+              width={673}
+              height={500}
+              alt="primary speciality"
+            />
+          </div>
+          <div className="animate lg:col-5 lg:order-2 " style={{ backgroundColor: "#ddd" }}>
+            <div className="  flex mb-6 mt-5"> <h2 className="" style={{ color: "red", marginRight: "10px" }}>Why</h2><h2> Choose Us</h2></div>
+            <div className="grid  md:grid-cols-2 " >
+              <figure className="flex flex-col      ">
+                <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
 
-                    <div className="max-w-sm    ">
-                      <div className="" style={{ paddingRight: "204px" }} >
-                        <Image
-                          className="mx-auto "
-                          src="/images/comsecurity/services/whyicon1.png"
-                          width={60}
-                          height={60}
-                          alt="primary speciality"
-                        />
-                      </div>
-                      <a href="#">
-                        <h5 className="mb-2 mt-3 text-2xl  tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}>24/7 Support</h5>
-                      </a>
-                      <p className="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>Simply dummy text of the printing andrety esetting industry.Lorem ipsum dolor sit amet, ligula magna at etiam.</p>
-
+                  <div className="max-w-sm  pe-5">
+                    <div className="" style={{ paddingRight: "204px" }} >
+                      <Image
+                        className="mx-auto "
+                        src="/images/comsecurity/services/whyicon1.png"
+                        width={60}
+                        height={60}
+                        alt="primary speciality"
+                      />
                     </div>
-                  </blockquote>
+                    <a href="#">
+                      <h5 className="mb-2 mt-3 text-2xl  tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}>24/7 Support</h5>
+                    </a>
+                    <p className="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px"  }}>
+                      Our trained professionals offer peace of mind, safeguarding your assets and ensuring safety at any hour. Your security, our commitment.
+                    </p>
 
-                </figure>
-                <figure className="flex flex-col  rounded-tr-lg dark:bg-gray-800 dark:border-gray-700">
-                  <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                  </div>
+                </blockquote>
 
-                    <div className="max-w-sm   ">
-                      <div className="" style={{ paddingRight: "204px" }} >
-                        <Image
-                          className="mx-auto "
-                          src="/images/comsecurity/services/whyicon2.png"
-                          width={60}
-                          height={60}
-                          alt="primary speciality"
-                        />
-                      </div>
-                      <a href="#">
-                        <h5 className="mb-2 mt-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}>Expert Employees</h5>
-                      </a>
-                      <p className="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>
-                        Our Team comprises of security professionals with background in Armed Forces, Para Military Forces and Police. Their experience and insight within the security industry are unmatched.</p>
+              </figure>
+              <figure className="flex flex-col  rounded-tr-lg dark:bg-gray-800 dark:border-gray-700">
+                <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
 
+                  <div className="max-w-sm   ">
+                    <div className="" style={{ paddingRight: "204px" }} >
+                      <Image
+                        className="mx-auto "
+                        src="/images/comsecurity/services/whyicon2.png"
+                        width={60}
+                        height={60}
+                        alt="primary speciality"
+                      />
                     </div>
-                  </blockquote>
+                    <a href="#">
+                      <h5 className="mb-2 mt-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}>Expert Employees</h5>
+                    </a>
+                    <p className="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>
+                      Our Team comprises of security professionals with background in Armed Forces, Para Military Forces and Police. Their experience and insight within the security industry are unmatched.</p>
 
-                </figure>
-                <figure className="flex flex-col    rounded-bl-lg md:border-b-0 md:border-r dark:bg-gray-800 dark:border-gray-700">
-                  <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                  </div>
+                </blockquote>
 
-                    <div className="max-w-sm    ">
-                      <div className="" style={{ paddingRight: "204px" }}>
-                        <Image
-                          className="mx-auto "
-                          src="/images/comsecurity/services/whyicon3.png"
-                          width={60}
-                          height={60}
-                          alt="primary speciality"
-                        />
-                      </div>
-                      <a href="#">
-                        <h5 className="mb-2 mt-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}> Verified Service</h5>
-                      </a>
-                      <p className="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>
-                        • Police <br />
-                        • Discharge Book <br />
-                        • Bio-Data<br />
-                        • References.
-                      </p>
+              </figure>
+              <figure className="flex flex-col    rounded-bl-lg md:border-b-0 md:border-r dark:bg-gray-800 dark:border-gray-700">
+                <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
 
+                  <div className="max-w-sm    ">
+                    <div className="" style={{ paddingRight: "204px" }}>
+                      <Image
+                        className="mx-auto "
+                        src="/images/comsecurity/services/whyicon3.png"
+                        width={60}
+                        height={60}
+                        alt="primary speciality"
+                      />
                     </div>
-                  </blockquote>
+                    <a href="#">
+                      <h5 className="mb-2 mt-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}> Verified Service</h5>
+                    </a>
+                    <p className="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>
+                      • Police <br />
+                      • Discharge Book <br />
+                      • Bio-Data<br />
+                      • References.
+                    </p>
 
-                </figure>
-                <figure className="flex flex-col border-gray-200 rounded-b-lg md:rounded-br-lg dark:bg-gray-800 dark:border-gray-700">
-                  <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                  </div>
+                </blockquote>
 
-                    <div className="max-w-sm    ">
-                      <div className="" style={{ paddingRight: "204px" }}>
-                        <Image
-                          className="mx-auto "
-                          src="/images/comsecurity/services/whyicon4.png"
-                          width={60}
-                          height={60}
-                          alt="primary speciality"
-                        />
-                      </div>
-                      <a href="#">
-                        <h5 className="mb-2 mt-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}>Secured Service</h5>
-                      </a>
-                      <p className="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>Simply dummy text of the printing andrety esetting industry.Lorem ipsum dolor sit amet, ligula magna at etiam.</p>
+              </figure>
+              <figure className="flex flex-col border-gray-200 rounded-b-lg md:rounded-br-lg dark:bg-gray-800 dark:border-gray-700">
+                <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
 
+                  <div className="max-w-sm    ">
+                    <div className="" style={{ paddingRight: "204px" }}>
+                      <Image
+                        className="mx-auto "
+                        src="/images/comsecurity/services/whyicon4.png"
+                        width={60}
+                        height={60}
+                        alt="primary speciality"
+                      />
                     </div>
-                  </blockquote>
+                    <a href="#">
+                      <h5 className="mb-2 mt-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}>Secured Service</h5>
+                    </a>
+                    <p className="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>
 
-                </figure>
-              </div>
+                      Our secured service goes above and beyond to ensure your safety and peace of mind. With a dedicated team of professionals and we provide unparalleled protection for your assets and well-being. </p>
+
+                  </div>
+                </blockquote>
+
+              </figure>
             </div>
           </div>
+        </div>
         {/* </div> */}
       </section>
       {/* End Our Services */}
@@ -891,7 +927,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
           <div className="animate row mt-10 items-center justify-center">
             <div className="xl:col-11">
               <div className="row items-center justify-center">
-              <div className="animate lg:col-5 lg:order-1">
+                <div className="animate lg:col-5 lg:order-1">
                   <div className="animate text-center">
                     <p className="text-start" style={{ color: "blue", fontWeight: "700" }}>{testimonial.subtitle}</p>
                     {/* <h2 className="mt-4 text-start ">{testimonial.title}</h2> */}
@@ -980,7 +1016,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                     </div>
                   </div>
                 </div>
-                
+
               </div>
             </div>
           </div>
@@ -1063,6 +1099,8 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
       {/* <section className="section mt-5"> */}
       <Homecta />
       {/* </section> */}
+
+      {/* <Contactform /> */}
 
       <section className="section">
         <Officeadd />

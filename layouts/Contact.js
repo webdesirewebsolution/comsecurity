@@ -44,7 +44,7 @@ const Contact = ({ data }) => {
               alt=""
             /> */}
              
-              <h2 className="mb-6 text-3xl font-bold">Feel free to contact us for any questions and doubts​</h2>
+              <h2 className="mb-6 text-3xl font-bold">Feel free to contact us​</h2>
               <p className="mb-6 text-neutral-500 dark:text-neutral-300">
               If you are looking for a body guard , House kepper, Security Guard, Gunman so connect us.
               </p>
@@ -73,7 +73,7 @@ const Contact = ({ data }) => {
                   Name
                 </label>
                 <input
-                  className="form-input w-full"
+                  className="form-input w-full h-10 "
                   name="name"
                   placeholder="Full Name"
                   type="text"
@@ -88,7 +88,7 @@ const Contact = ({ data }) => {
                   Email
                 </label>
                 <input
-                  className="form-input w-full"
+                  className="form-input w-full h-10"
                   name="email"
                   placeholder="Email Address"
                   type="email"
@@ -103,7 +103,7 @@ const Contact = ({ data }) => {
                   Subject
                 </label>
                 <input
-                  className="form-input w-full"
+                  className="form-input w-full h-10"
                   name="subject"
                   type="text"
                   required
@@ -116,7 +116,7 @@ const Contact = ({ data }) => {
                 >
                   Message
                 </label>
-                <textarea className="form-textarea w-full" rows="6" />
+                <textarea className="form-textarea w-full" rows="3" />
               </div>
               <button className="btn btn-primary block w-full">
                 Submit Now
