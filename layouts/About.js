@@ -67,7 +67,7 @@ const About = ({ data }) => {
             <div className="animate md:col-6 lg:col-4 md:order-1">
               <p style={{ color: "blue", fontWeight: "700" }}>{about_us.subtitle}</p>
               {markdownify(about_us.title, "h2", "section-title bar-left mt-4")}
-              {markdownify(about_us.content, "p", "mt-10")}
+              {markdownify(about_us.content, "p", "mt-10 text-justify")}
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@ const About = ({ data }) => {
             <div className="animate md:col-6 lg:col-5">
               <p style={{ color: "blue", fontWeight: "700" }}>{mission.subtitle}</p>
               {markdownify(mission.title, "h2", "section-title bar-left mt-4")}
-              {markdownify(mission.content, "p", "mt-10")}
+              {markdownify(mission.content, "p", "mt-10 text-justify")}
             </div>
           </div>
         </div>

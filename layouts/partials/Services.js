@@ -30,7 +30,7 @@ const Services = ({ data }) => {
             </div>
             <div className="animate md:col-6 lg:col-4 md:order-1">
               <h3 className="section-title bar-left mt-4">SECURITY GUARD</h3>
-              <p className="mt-5">
+              <p className="mt-5 text-justify">
                 The main duties and responsibilities of security guards are to watch and patrol areas to guard against illegal activity
                 and dangerous scenarios. Security guards work for a variety of employers, including schools, banks, hospitals and commercial
                 centers, such as casinos, sports centers, power plants and transportation centers.
@@ -52,7 +52,7 @@ const Services = ({ data }) => {
             </div>
             <div className="animate md:col-6 lg:col-4 md:order-2">
               <h3 className="section-title bar-left mt-4">SECURITY SUPERVISOR</h3>
-              <p className="mt-5">
+              <p className="mt-5 text-justify">
                 The nature of security work varies depending on location. Some security guards are stationed at desks while others monitor areas in vehicles, on bicycles or on foot. Security guards work to protect the health and safety of the public, and serve as physical symbols to deter petty crimes, such as theft, and more serious crimes as well, such as acts of domestic terrorism
               </p>
             </div>
@@ -72,7 +72,7 @@ const Services = ({ data }) => {
             </div>
             <div className="animate md:col-6 lg:col-4 md:order-1">
               <h3 className="section-title bar-left mt-4">HOUSE KEEPING</h3>
-              <p className="mt-5">
+              <p className="mt-5 text-justify">
                 Condimentum massa aliquam nec eget iaculis integer eu, amet purus, vel eget nunc, sed lectus et quis quam sit felis at in morbi nibh non, at ultrices commodo egestas amet, porttitor habitasse donec elementum duis amet pretium.
               </p>
             </div>
@@ -92,7 +92,7 @@ const Services = ({ data }) => {
             </div>
             <div className="animate md:col-6 lg:col-4 md:order-2">
               <h3 className="section-title bar-left mt-4">PSO</h3>
-              <p className="mt-5">
+              <p className="mt-5 text-justify">
                 The National Guard is one of the United States’ most significant military reserve elements. It is called upon in times of hostility to supplement regular forces in multiple arms of service. In addition to acting in this capacity, National Guard units also fulfill state functions when necessary. Thus, National Guard units are considered to shoulder both federal and state missions.
               </p>
             </div>
@@ -112,7 +112,7 @@ const Services = ({ data }) => {
             </div>
             <div className="animate md:col-6 lg:col-4 md:order-1">
               <h3 className="section-title bar-left mt-4">PERSONAL BODYGUARD</h3>
-              <p className="mt-5">
+              <p className="mt-5 text-justify">
                 In addition to reacting quickly physically, security guards must often possess certain personality qualities that make them able to detect and deter crimes. Security guards are detail-oriented and have good listening skills. They are highly observant, and often have the ability to watch and observe areas without getting distracted.
               </p>
             </div>
@@ -132,7 +132,7 @@ const Services = ({ data }) => {
             </div>
             <div className="animate md:col-6 lg:col-4 md:order-2">
               <h3 className="section-title bar-left mt-4">BOUNCER</h3>
-              <p className="mt-5">
+              <p className="mt-5 text-justify">
                 Our firm is engrossed in rendering Bouncer Services. Knowledgeable experts who have affluent industry experience render this service. This service is extremely admired in the market due to reliability, timely completion and flexibility. We render this service at low prices to our patrons.
               </p>
             </div>
@@ -152,7 +152,7 @@ const Services = ({ data }) => {
               <div className="row  justify-center">
                 <div
                   className="animate mt-10 md:col-8 xl:col-4">
-                  <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+                  <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{minHeight:"367px"}}>
                     <Image
                       // className="mx-auto"
                       src="/images/comsecurity/services/privacy.jpg"
@@ -163,7 +163,7 @@ const Services = ({ data }) => {
                     />
                     <h5 className="h4 mt-2">Prevention</h5>
                     {/* <h5 className="h4 mt-2">{country.name}</h5> */}
-                    <p className="mt-2">
+                    <p className="mt-2 text-justify">
                       A security guard's role is to PROTECT people and the property of his employer or contracted clients. So, the major responsibility of a security guard is prevention BEFORE an incident/offense occurs. The absence of incidents or offenses (crimes) is one sign that a security guard is doing a good job.
                     </p>
                   </div>
@@ -171,7 +171,7 @@ const Services = ({ data }) => {
 
                 <div
                   className="animate mt-10 md:col-8 xl:col-4">
-                  <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+                  <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{minHeight:"367px"}}>
                     <Image
                       // className="mx-auto"
                       src="/images/comsecurity/services/visibility.jpg"
@@ -182,14 +182,14 @@ const Services = ({ data }) => {
                     />
                     <h5 className="h4 mt-2">Visibility</h5>
                     {/* <h5 className="h4 mt-2">{country.name}</h5> */}
-                    <p className="mt-2">
+                    <p className="mt-2 text-justify">
                       Security guards should remain visible as a deterrent to criminals. Thefts, damage and injuries can be thwarted when the perpetrators see a security guard. So, a security guard should be highly visible. By being seen, the guard may discourage anyone who might be considering theft, damage, or personal injury.
                     </p>
                   </div>
                 </div>
                 <div
                   className="animate mt-10 md:col-8 xl:col-4">
-                  <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+                  <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{minHeight:"367px"}}>
                     <Image
                       // className="mx-auto"
                       src="/images/comsecurity/services/vigilance.jpg"
@@ -200,7 +200,7 @@ const Services = ({ data }) => {
                     />
                     <h5 className="h4 mt-2">Vigilance</h5>
                     {/* <h5 className="h4 mt-2">{country.name}</h5> */}
-                    <p className="mt-2">
+                    <p className="mt-2 text-justify">
                       Security guards must remain alert to watch for abnormal activity or hear any unusual sounds. A security guard's job is PREVENTION. To do the job well, the security guard MUST: Be alert, Listen and Watch. In fact, security guards should be suspicious of any activity that may draw them away from their post. It could be a plan to draw their attention away from their duties.
                     </p>
                   </div>

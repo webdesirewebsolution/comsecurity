@@ -5,6 +5,8 @@ import Contact from "@layouts/Contact";
 import Default from "@layouts/Default";
 import Domesticpackages from "@layouts/Domesticpackages";
 import Internationalpackages from "@layouts/Internationalpackages";
+import PrivacyPolicy from "@layouts/components/PrivacyPolicy";
+import TermsandConditions from "@layouts/components/TermsandConditions";
 import Services from "@layouts/partials/Services";
 import { getRegularPage, getSinglePage } from "@lib/contentParser";
 
@@ -35,7 +37,11 @@ const RegularPages = ({ data }) => {
         <Internationalpackages data={data}/>
      ) : layout === "services" ? (
       <Services data={data}/>
-      ) :
+      ) : layout === "privacypolicy" ? (
+        <PrivacyPolicy data={data}/>
+        ) : layout === "termsandconditions" ? (
+          <TermsandConditions data={data}/>
+          ) :
 
       (
         <Default data={data} />

@@ -10,7 +10,6 @@ const Footer = () => {
   const { copyright, footer_content } = config.params;
   const { email, phone, location } = config.contact_info;
 
-  
   return (
     <footer className="mt-8 " 
     style={{backgroundColor:"#1d1d23"}}>

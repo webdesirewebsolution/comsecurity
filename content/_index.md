@@ -66,7 +66,7 @@ features:
 servicehome: 
   title:  Security Guard Services
   sub_title: OPEN 24/7
-  description: At COM SECURITY, we offer expert security guard services. Our highly trained professionals provide armed and  unarmed <br />security, event security, commercial and residential protection, and more. With state-of-the-art technology <br /> and a proactive approach, we ensure your safety and peace of mind. Contact us for customized security solutions. 
+  description: At COM SECURITY, we offer expert security guard services. Our highly trained professionals provide armed and  unarmed <br />security, event security, commercial and residential protection, and more. With state-of-the-art technology  and a <br /> proactive approach, we ensure your safety and peace of mind. Contact us for customized security solutions. 
   title2: International Tours
 
 
@@ -100,37 +100,29 @@ testimonial:
   subtitle: OUR TESTIMONIALS
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas  Werat viverra id et aliquet. vulputate egestas sollicitudin.
   list:
-    - author: David Cameron
-      avatar: /images/user-img/01.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
-      avatar: /images/user-img/02.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
-      avatar: /images/user-img/03.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
-      avatar: /images/user-img/04.png
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
-      avatar: /images/user-img/05.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
-      avatar: /images/user-img/06.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
-      avatar: /images/user-img/07.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
+    - author: Rajesh Verma
       avatar: /images/user-img/08.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
+      profession: Business Owner, Mumbai
+      content: We've relied on COM SECURITY for our business security needs, and they've never disappointed.Their highly-trained guards have been instrumental in safeguarding our premises, and their professionalism is commendable.
+    - author: Priya Gupta
+      avatar: /images/user-img/02.jpg
+      profession:  Event Organizer, Delhi
+      content: COM SECURITY played a pivotal role in ensuring the success of our recent event in Delhi. Their event security team was efficient, ensuring a seamless experience for our attendees. I highly recommend their services.
+    - author: Anita Patel 
+      avatar: /images/user-img/03.jpg
+      profession: Store Manager, Ahmedabad Supermart
+      content: Shoplifting was a constant concern until we partnered with COM SECURITY. Their retail security team has not only reduced theft but also improved the shopping environment for our customers. 
+    - author: Vikram Singh
+      avatar: /images/user-img/04.png
+      profession: Resident, Bangalore Apartments
+      content: Living in a large residential complex can be worrisome, but Com Security has truly elevated our sense of security. Their residential security service is exemplary, making our neighborhood feel safer than ever
+    - author: Ravi Kumar
+      avatar: /images/user-img/05.jpg
+      profession: Construction Site Supervisor, Chennai
+      content: Securing a construction site is a tough job, but Com Security handles it with professionalism and precision. Their vigilant guards have been essential in safeguarding our assets and ensuring a smooth operation.
+    - author: Sneha Reddy
+      avatar: /images/user-img/06.jpg
+      profession: Event Attendee, Hyderabad Cultural Festival
+      content: I attended the Hyderabad Cultural Festival, and Com Security made the event worry-free with their excellent event security.Their guards were courteous, ensuring a safe and enjoyable experience for all attendees.
 
 ---

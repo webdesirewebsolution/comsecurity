@@ -536,26 +536,26 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
               <div className="grid grid-cols-3 gap-4 mt-8">
                 <div className="">
                   <div>
-                    <h2>250+</h2>
+                    <h2>15+</h2>
                   </div>
                   <div className="mt-3">
-                    <h6>Area Serving</h6>
+                    <h6>Years in Business</h6>
                   </div>
                 </div>
                 <div className="">
                   <div>
-                    <h2>260+</h2>
+                    <h2>500+</h2>
                   </div>
                   <div className="mt-3">
-                    <h6>Happy Client</h6>
+                    <h6>Happy Clients</h6>
                   </div>
                 </div>
                 <div className="">
                   <div>
-                    <h2>240+</h2>
+                    <h2>128+</h2>
                   </div>
                   <div className="mt-3">
-                    <h6>Our Employees</h6>
+                    <h6>Licensed Officer</h6>
                   </div>
                 </div>
               </div>
