@@ -12,7 +12,6 @@ import { IoMail, IoCall } from "react-icons/io5";
 
 
 
-
 const Header = () => {
   // distructuring the main menu from menu object
   const { main } = menu;
@@ -48,6 +47,13 @@ const Header = () => {
     display: 'flex',
     justifyContent: "space-around"
   }
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+ 
   return (
     <>
 
@@ -57,7 +63,7 @@ const Header = () => {
           }`}
         ref={headerRef}
       >
-        <div className="container-fluid mainheadtop" style={{ backgroundColor: '#f9f9f9' }}>
+        {/* <div className="container-fluid mainheadtop" style={{ backgroundColor: '#f9f9f9' }}>
           <div className=" container " style={socialiconstyle}>
 
             <div className="" style={{ display: 'flex ' }}>
@@ -104,7 +110,7 @@ const Header = () => {
 
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <nav className="navbar container">
         
           <div className="order-0">
@@ -181,12 +187,13 @@ const Header = () => {
             <Logo src={logo} alt="Logo" />
           </div>
           <button
+          onClick={toggleDropdown}
             data-collapse-toggle="navbar-dropdown"
             type="button"
             data-te-target="#navbar-dropdown"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-dropdown"
-            aria-expanded="false"
+            aria-expanded={isDropdownOpen ? "true" : "false"}
           >
             <span className="sr-only">Open main menu</span>
             <svg
@@ -207,8 +214,10 @@ const Header = () => {
           </button>
     
           <div
-            className="hidden  navbar-dropdown w-full md:block md:w-auto"
-            id="navbar-dropdown"
+              className={`navbar-dropdown w-full md:block md:w-auto ${
+                isDropdownOpen ? "block" : "hidden"
+              }`}
+              id="navbar-dropdown"
           >
             <div>
             <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -264,7 +273,7 @@ const Header = () => {
           </div>
         </nav>
 
-
+        
       </header>
     </>
   );
