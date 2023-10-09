@@ -13,7 +13,7 @@ const Hero = () => {
                             <div className="page-heading">
                                 <h1 className="text-white">Services Page</h1>
                                 <ul className="text-white">
-                                    <li className=""><a href="">Home </a> </li>
+                                    <li className="topli"><a href="/">Home </a> </li>
                                     <li><a href="">Service</a></li>
                                 </ul>
                             </div>

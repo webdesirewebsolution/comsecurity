@@ -444,12 +444,26 @@
     text-align: center;
   }
 }
-@media (max-width: 419px) {
+@media (min-width: 380px)and (max-width: 419px) {
   .bg-textt {   
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 25%;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+}
+@media (max-width: 379px) {
+  .bg-textt {   
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -524,7 +538,7 @@
 
 @media only screen and (max-width: 480px){
   .bg-image{
-    height: 235px;
+    height: 320px;
   }
 }
 
@@ -812,7 +826,7 @@
 .page-heading li:last-child a {
   color: #EE3238;
 }
-.page-heading li::before {
+.page-heading .topli::before {
   content: "/";
   height: 60%;
   position: absolute;

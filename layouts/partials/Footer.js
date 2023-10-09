@@ -94,7 +94,7 @@ const Footer = () => {
             <h3 className="h5" style={{color:"white"}}> Contact</h3>
             <ul className="mt-5 leading-10">
               {/* <li>{markdownify(location)}</li> */}
-              <p style={{color:"white"}}> comthfh@gmail.com</p>
+              <p style={{color:"white"}}> comsecurity@gmail.com</p>
               {/* social icons */}
              
               {phone && (
@@ -109,7 +109,7 @@ const Footer = () => {
         {/* copyright */}
         <div className=" py-6 text-center">
           {/* {markdownify(copyright, "p", "footer-copy-write")} */}
-          <p className="text-white">2023 Copyright: comthfh@gmail.com</p>
+          <p className="text-white">2023 Copyright: comsecurity@gmail.com</p>
         </div>
       </div>
     </footer>

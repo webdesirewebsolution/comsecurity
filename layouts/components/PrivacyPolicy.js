@@ -3,7 +3,7 @@ import React from 'react'
 
 function PrivacyPolicy() {
     return (
-        <>
+        <div className='container'>
             <h1>Privacy Policy for com security</h1>
 
             <p>At comsecurity.in, accessible from https://comsecurity.vercel.app/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by comsecurity.in and how we use it.</p>
@@ -91,7 +91,7 @@ function PrivacyPolicy() {
             <h2>Contact Us</h2>
 
             <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p>
-        </>
+        </div>
     )
 }
 

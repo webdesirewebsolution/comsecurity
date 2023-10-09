@@ -8,7 +8,7 @@ about_us:
   subtitle: WHO WE ARE
   title: Security Solutions
   content: Welcome to COM SECURITY, where safety meets expertise. Our seasoned security professionals are dedicated to safeguarding your peace of mind and assets. With years of experience and rigorous training, our team offers a proactive approach to security challenges, utilizing state-of-the-art technology and a commitment to customization. Whether you need armed or unarmed guards, event security, commercial protection, residential safety, construction site security, or retail asset protection, we've got you covered. Our professionalism, combined with excellent customer service and access control solutions, ensures a secure environment tailored to your unique needs. Contact us today, and let us create a personalized security plan that prioritizes your safety and peace of mind around the clock. Your security is our mission.
-  image: /images/about/01.jpg
+  image: /images/about/securityguard14.jpg
 
 ## our works
 works:
@@ -78,11 +78,11 @@ our_office:
   content: We were freelance designers and developers, constantly finding </br> ourselves deep in vague feedback. This made every client and team
   flag: /images/about/flags/us.png
   name: Head Office Tronica City
-  location: B-133, sec-A5/6, RMS Plaza Trans Delhi Signature City, Loni Ghaziabad-201103  Mob:- +91 9718069976, +91 9355419326  E-mail:- comthfh@gmail.com
+  location: B-133, sec-A5/6, RMS Plaza Trans Delhi Signature City, Loni Ghaziabad-201103  Mob:- +91 9718069976, +91 9355419326  E-mail:- comsecurity@gmail.com
   countries:
     - flag: /images/about/flags/us.png
       name: Head Office Tronica City
-      location: B-133, sec-A5/6, RMS Plaza Trans Delhi Signature City, Loni Ghaziabad-201103  Mob:- +91 9718069976, +91 9355419326  E-mail:- comthfh@gmail.com
+      location: B-133, sec-A5/6, RMS Plaza Trans Delhi Signature City, Loni Ghaziabad-201103  Mob:- +91 9718069976, +91 9355419326  E-mail:- comsecurity@gmail.com
     - flag: /images/about/flags/au.png
       name: Branch Officem Noida
       location: Shop no. 9, Ground Floor Green India Place, Khoda Colony Noida, Sector-62,(U.P.)201301  Mob:- +91 9319852290, +91 9355256624

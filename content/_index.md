@@ -117,7 +117,7 @@ testimonial:
       profession: Resident, Bangalore Apartments
       content: Living in a large residential complex can be worrisome, but Com Security has truly elevated our sense of security. Their residential security service is exemplary, making our neighborhood feel safer than ever
     - author: Ravi Kumar
-      avatar: /images/user-img/05.jpg
+      avatar: /images/about/team/01.jpg
       profession: Construction Site Supervisor, Chennai
       content: Securing a construction site is a tough job, but Com Security handles it with professionalism and precision. Their vigilant guards have been essential in safeguarding our assets and ensuring a smooth operation.
     - author: Sneha Reddy

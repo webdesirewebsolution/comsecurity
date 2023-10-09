@@ -31,7 +31,7 @@ const About = ({ data }) => {
                             <div className="page-heading">
                                 <h1 className="text-white">About Page</h1>
                                 <ul className="text-white">
-                                    <li><a href="">Home</a></li>
+                                    <li className="topli"><a href="/">Home</a></li>
                                     <li><a href="">About Us</a></li>
                                 </ul>
                             </div>
@@ -49,8 +49,8 @@ const About = ({ data }) => {
                 {/* <ImageFallback
                   className="animate relative w-full rounded-2xl"
                   src={about_us.image}
-                  width={425}
-                  height={487}
+                  width={400}
+                  height={400}
                   alt=""
                 /> */}
                 <Image
@@ -59,9 +59,6 @@ const About = ({ data }) => {
                   height={600}
                   alt=""
                 />
-
-
-
               </div>
             </div>
             <div className="animate md:col-6 lg:col-4 md:order-1">

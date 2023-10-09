@@ -33,7 +33,7 @@ const Contact = ({ data }) => {
               <div className="page-heading">
                 <h1 className="text-white">Contact Us</h1>
                 <ul className="text-white">
-                  <li><a href="">Home</a></li>
+                  <li className="topli"><a href="/">Home</a></li>
                   <li><a href="">Contact Us</a></li>
                 </ul>
               </div>
@@ -68,8 +68,8 @@ const Contact = ({ data }) => {
 
               <div className="text-center mt-1 me-4" style={{ display: "flex" }}>
                 <IoMail style={{ color: "blue", marginTop: "8px", marginRight: "10px" }} />
-                <Link href="comthfh@gmail.com" >
-                  <h6 style={{ fontSize: '14px', fontWeight: '500' }} className="p-0 mt-2"> comthfh@gmail.com
+                <Link href="comsecurity@gmail.com" >
+                  <h6 style={{ fontSize: '14px', fontWeight: '500' }} className="p-0 mt-2"> comsecurity@gmail.com
                     <style>
                       {
                         `
@@ -227,7 +227,7 @@ const Contact = ({ data }) => {
                             Mob: +91 9718069976, +91 9355419326
                           </p>
                           <p className="text-neutral-500 dark:text-neutral-200">
-                            E-mail: comthfh@gmail.com
+                            E-mail: comsecurity@gmail.com
                           </p>
 
                         </div>

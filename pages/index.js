@@ -565,9 +565,6 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
       </section>
       {/* End About */}
 
-      {/* <Reviews /> */}
-
-
       {/* Our Services */}
 
       <section className="pt-8">
@@ -577,7 +574,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
           {markdownify(servicehome.description, "p", "mt-10")}
 
         </div>
-        <div className="grid mb-8  border-gray-200  shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-4 mt-5 container">
+        <div className="grid mb-8  border-gray-200  shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-4 mt-5 ">
 
           <div className="max-w-sm  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-4
           relative max-w-md overflow-hidden bg-cover bg-no-repeat">

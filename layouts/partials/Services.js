@@ -17,9 +17,9 @@ const Services = ({ data }) => {
         {/* <Banner title={title} /> */}
         <Hero />
         <div className="section container">
-          <div className="row items-center justify-center">
+          <div className="row items-center justify-evenly">
             <div className="animate md:col-6 lg:col-5 md:order-2">
-              <div className="about-image relative p-[60px]">
+              <div className="about-image relative ">
                 <Image
                   src="/images/comsecurity/services/securityguard.jpg"
                   width={600}
@@ -39,9 +39,9 @@ const Services = ({ data }) => {
           </div>
         </div>
         <div className="section container">
-          <div className="row items-center justify-center">
+          <div className="row items-center justify-evenly">
             <div className="animate md:col-6 lg:col-5 md:order-1">
-              <div className="about-image relative p-[60px]">
+              <div className="about-image relative ">
                 <Image
                   src="/images/comsecurity/services/securitysuper.jpg"
                   width={600}
@@ -59,11 +59,11 @@ const Services = ({ data }) => {
           </div>
         </div>
         <div className="section container">
-          <div className="row items-center justify-center">
+          <div className="row items-center justify-evenly">
             <div className="animate md:col-6 lg:col-5 md:order-2">
-              <div className="about-image relative p-[60px]">
+              <div className="about-image relative ">
                 <Image
-                  src="/images/comsecurity/services/hkeeping.jpg"
+                  src="/images/comsecurity/services/housekeeping1.jpeg"
                   width={600}
                   height={600}
                   alt=""
@@ -79,9 +79,9 @@ const Services = ({ data }) => {
           </div>
         </div>
         <div className="section container">
-          <div className="row items-center justify-center">
+          <div className="row items-center justify-evenly">
             <div className="animate md:col-6 lg:col-5 md:order-1">
-              <div className="about-image relative p-[60px]">
+              <div className="about-image relative ">
                 <Image
                   src="/images/comsecurity/services/pso.jpg"
                   width={600}
@@ -99,9 +99,9 @@ const Services = ({ data }) => {
           </div>
         </div>
         <div className="section container">
-          <div className="row items-center justify-center">
+          <div className="row items-center justify-evenly">
             <div className="animate md:col-6 lg:col-5 md:order-2">
-              <div className="about-image relative p-[60px]">
+              <div className="about-image relative ">
                 <Image
                   src="/images/comsecurity/services/pbodyguard.jpg"
                   width={600}
@@ -119,9 +119,9 @@ const Services = ({ data }) => {
           </div>
         </div>
         <div className="section container">
-          <div className="row items-center justify-center">
+          <div className="row items-center justify-evenly">
             <div className="animate md:col-6 lg:col-5 md:order-1">
-              <div className="about-image relative p-[60px]">
+              <div className="about-image relative ">
                 <Image
                   src="/images/comsecurity/services/aboutcom.jpg"
                   width={600}
