@@ -207,7 +207,7 @@ const Header = () => {
           </button>
     
           <div
-            className=" navbar-dropdown w-full md:block md:w-auto"
+            className="hidden  navbar-dropdown w-full md:block md:w-auto"
             id="navbar-dropdown"
           >
             <div>
