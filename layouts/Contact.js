@@ -200,7 +200,7 @@ const Contact = ({ data }) => {
               <div className="flex flex-wrap items-center">
                 <div className="block w-full shrink-0 grow-0 basis-auto lg:flex lg:w-6/12 xl:w-4/12">
                   <div className="h-[500px] w-full">
-                    <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    <iframe src="https://maps.app.goo.gl/ZmAxHrfxwV3eTsTJA"
                       className="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" frameBorder="0"
                       allowFullScreen></iframe>
                   </div>
@@ -221,9 +221,9 @@ const Contact = ({ data }) => {
                         </div>
                         <div className="ml-6 grow">
                           <p className="mb-2 font-bold dark:text-white">
-                            Head Office Tronica City
+                            Branch Office (Haridware)
                           </p>
-                          <p>B-133, sec-A5/6, RMS Plaza Trans Delhi Signature City, Loni Ghaziabad-201103
+                          <p>R-76, Shivalik Nager, Haridware (UK) 249403
                             Mob: +91 9718069976, +91 9355419326
                           </p>
                           <p className="text-neutral-500 dark:text-neutral-200">
@@ -247,13 +247,13 @@ const Contact = ({ data }) => {
                         </div>
                         <div className="ml-6 grow">
                           <p className="mb-2 font-bold dark:text-white">
-                            Branch Office Noida
+                            Branch Office (Noida)
                           </p>
                           <p>Shop no. 9, Ground Floor Green India Place, Khoda Colony Noida, Sector-62,(U.P.)201301
                           </p>
 
                           <p className="text-neutral-500 dark:text-neutral-200">
-                            Mob: +91 9319852290, +91 9355256624
+                            Mob: +91 9319852290
                           </p>
                         </div>
                       </div>
@@ -272,18 +272,104 @@ const Contact = ({ data }) => {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold dark:text-white">Branch Office Haryana</p>
+                          <p className="mb-2 font-bold dark:text-white">Branch Office (Haryana)</p>
                           <p className="text-neutral-500 dark:text-neutral-200">
-                            Village Umedgarh, Tehsil-Ganaur, District-Sonipat, Haryana-131039
+                            Plot No. 490, Sector-1 , imt, manesar gurgaon - 122051
+
 
                           </p>
                           <p className="text-neutral-500 dark:text-neutral-200">
-                            Mob: +91 9319513464, +91 9560364532
+                            Mob: +91 9319513464, haryana@comsecurity.in
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:w-6/12 xl:px-12">
+                    <div
+                      className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:mb-0 xl:w-6/12 xl:px-12">
+                      <div className="align-start flex">
+                        <div className="shrink-0">
+                          <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
+                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                              <path strokeLinecap="round" strokeLinejoin="round"
+                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                          </div>
+                        </div>
+                        <div className="ml-6 grow">
+                          <p className="mb-2 font-bold dark:text-white">Branch Office
+                                            (Rajasthan)</p>
+                          <p className="text-neutral-500 dark:text-neutral-200">
+                          241, sector-11, Aravali Vihar , Bhiwadi, Rajasthan - 301019
+                                            
+
+
+                          </p>
+                          <p className="text-neutral-500 dark:text-neutral-200">
+                          Mob: +91 7737028839, rajasthan@comsecurity.in
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:mb-0 xl:w-6/12 xl:px-12">
+                      <div className="align-start flex">
+                        <div className="shrink-0">
+                          <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
+                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                              <path strokeLinecap="round" strokeLinejoin="round"
+                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                          </div>
+                        </div>
+                        <div className="ml-6 grow">
+                          <p className="mb-2 font-bold dark:text-white">Branch Office
+                                            (Delhi)</p>
+                          <p className="text-neutral-500 dark:text-neutral-200">
+                          D-142/2, Shahabad Dairy, New Delhi - 110042 
+                                           
+
+
+                          </p>
+                          <p className="text-neutral-500 dark:text-neutral-200">
+                          Mob: +91 9355256624, delhi@comsecurity.in
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:mb-0 xl:w-6/12 xl:px-12">
+                      <div className="align-start flex">
+                        <div className="shrink-0">
+                          <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
+                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                              <path strokeLinecap="round" strokeLinejoin="round"
+                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                          </div>
+                        </div>
+                        <div className="ml-6 grow">
+                          <p className="mb-2 font-bold dark:text-white">Corporate Office
+                                            (Delhi)</p>
+                          <p className="text-neutral-500 dark:text-neutral-200">
+                          B-133, SEC-A-5/6, RMS Palaza Trans Delhi Signature City, Loni, GZB (UP) 201102
+                                            
+                                           
+
+
+                          </p>
+                          <p className="text-neutral-500 dark:text-neutral-200">
+                          Mob: +91 1204262182, info@comsecurity.in
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    {/* <div className="w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:w-6/12 xl:px-12">
                       <div className="align-start flex">
                         <div className="shrink-0">
                           <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
@@ -304,7 +390,7 @@ const Contact = ({ data }) => {
                           </p>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
