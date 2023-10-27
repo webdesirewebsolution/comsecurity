@@ -24,21 +24,21 @@ const About = ({ data }) => {
   return (
     <>
       <div className="pagehding-sec">
-                <div className="pagehding-overlay"></div>
-                <div className="container container1">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="page-heading">
-                                <h1 className="text-white">About Page</h1>
-                                <ul className="text-white">
-                                    <li className="topli"><a href="/">Home</a></li>
-                                    <li><a href="">About Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div className="pagehding-overlay"></div>
+        <div className="container container1">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="page-heading">
+                <h1 className="text-white">About Page</h1>
+                <ul className="text-white">
+                  <li className="topli"><a href="/">Home</a></li>
+                  <li><a href="">About Us</a></li>
+                </ul>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
       <section className="section pt-0">
         {/* <Banner title={title} /> */}
         {/* About */}
@@ -54,7 +54,7 @@ const About = ({ data }) => {
                   alt=""
                 /> */}
                 <Image
-                  src="/images/comsecurity/services/securityguard.jpg"
+                  src="/images/comsecurity/com131.jpeg"
                   width={600}
                   height={600}
                   alt=""
@@ -133,7 +133,7 @@ const About = ({ data }) => {
                   fill={false}
                 /> */}
                 <Image
-                  src="/images/comsecurity/services/aboutcom.jpg"
+                  src="/images/comsecurity/cmd8.jpeg"
                   width={600}
                   height={600}
                   alt=""
@@ -315,30 +315,98 @@ const About = ({ data }) => {
           <div className="animate text-center">
             <p style={{ color: "blue", fontWeight: "700" }}>{our_office.subtitle}</p>
             {markdownify(our_office.title, "h4", "section-title mt-4")}
-            {/* {markdownify(our_office.content, "p", "mt-16")} */}
+
           </div>
           <div className="row justify-center">
             <div className="lg:col-12">
-              <div className="row  justify-center">
+              {/* <div className="row  justify-center">
                 {our_office.countries.map((our_office, index) => (
                   <div
                     key={("country-", index)}
                     className="animate mt-10 md:col-8 xl:col-4"
                   >
-                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{minHeight:"162px"}}>
-                      {/* <ImageFallback
-                        // className="mx-auto"
-                        src={country.flag}
-                        width={80}
-                        height={80}
-                        alt={country.name}
-                      /> */}
+                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{ minHeight: "162px" }}>
+
                       <h5 className="h4 mt-2">{our_office.name}</h5>
-                      {/* <h5 className="h4 mt-2">{country.name}</h5> */}
+
                       <p className="mt-2">{our_office.location}</p>
                     </div>
                   </div>
                 ))}
+
+              </div> */}
+              <div className="row  justify-center">
+
+                <div
+
+                  className="animate mt-10 md:col-8 xl:col-4"
+                >
+                  <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{ minHeight: "182px" }}>
+
+                    <h5 className="h4 mt-2">Branch Office (Haridware) </h5>
+                    <p className="mt-2">R-76, Shivalik Nager, Haridware (UK) 249403
+                    </p>
+                  </div>
+                </div>
+
+
+
+                <div
+
+                  className="animate mt-10 md:col-8 xl:col-4"
+                >
+                  <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{ minHeight: "182px" }}>
+
+                    <h5 className="h4 mt-2">Branch Office
+                      (Noida)
+                    </h5>
+                    <p className="mt-2">Shop no. 9, Ground Floor Green India Place, Khoda Colony Noida, Sector-62,(U.P.)201301
+                      Mob: +91 9319852290,  noida@comsecurity.in</p>
+                  </div>
+                </div>
+
+
+                <div className="animate mt-10 md:col-8 xl:col-4">
+                  <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{ minHeight: "182px" }}>
+
+                    <h5 className="h4 mt-2">Branch Office
+                      (Haryana)
+                    </h5>
+                    <p className="mt-2">Plot No. 490, Sector-1 , imt, manesar gurgaon - 122051
+                      Mob: +91 9319513464, haryana@comsecurity.in</p>
+                  </div>
+                </div>
+                <div className="animate mt-10 md:col-8 xl:col-4">
+                  <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{ minHeight: "182px" }}>
+
+                    <h5 className="h4 mt-2">Branch Office
+                      (Rajasthan)
+                    </h5>
+                    <p className="mt-2">241, sector-11, Aravali Vihar , Bhiwadi, Rajasthan - 301019
+                      Mob: +91 7737028839, rajasthan@comsecurity.in</p>
+                  </div>
+                </div>
+                <div className="animate mt-10 md:col-8 xl:col-4">
+                  <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{ minHeight: "182px" }}>
+
+                    <h5 className="h4 mt-2">Branch Office
+                      (Delhi)
+                    </h5>
+                    <p className="mt-2">D-142/2, Shahabad Dairy, New Delhi - 110042
+                      Mob: +91 9355256624, delhi@comsecurity.in</p>
+                  </div>
+                </div>
+                <div className="animate mt-10 md:col-8 xl:col-4">
+                  <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{ minHeight: "182px" }}>
+
+                    <h5 className="h4 mt-2">Corporate Office
+
+                    </h5>
+                    <p className="mt-2">B-133, SEC-A-5/6, RMS Palaza Trans Delhi Signature City, Loni, GZB (UP) 201102
+                      Mob: +91 1204262182, info@comsecurity.in</p>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>

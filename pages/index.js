@@ -524,7 +524,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
             <div className="animate lg:col-6 lg:order-2">
               <Image
                 className="mx-auto"
-                src="/images/comsecurity/banner/cm.jpg"
+                src="/images/comsecurity/com131.jpeg"
                 width={575}
                 height={511}
                 alt="primary speciality"
@@ -749,7 +749,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
           <div className="animate lg:col-6 lg:order-1">
             <Image
               className="mx-auto"
-              src="/images/about/comabout12.png"
+              src="/images/comsecurity/com121.jpeg"
               width={673}
               height={500}
               alt="primary speciality"

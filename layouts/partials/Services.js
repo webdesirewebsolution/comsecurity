@@ -21,7 +21,7 @@ const Services = ({ data }) => {
             <div className="animate md:col-6 lg:col-5 md:order-2">
               <div className="about-image relative ">
                 <Image
-                  src="/images/comsecurity/services/securityguard.jpg"
+                  src="/images/comsecurity/cmd1.jpeg"
                   width={600}
                   height={600}
                   alt=""
@@ -43,7 +43,7 @@ const Services = ({ data }) => {
             <div className="animate md:col-6 lg:col-5 md:order-1">
               <div className="about-image relative ">
                 <Image
-                  src="/images/comsecurity/services/securitysuper.jpg"
+                  src="/images/comsecurity/com131.jpeg"
                   width={600}
                   height={600}
                   alt=""
@@ -83,7 +83,7 @@ const Services = ({ data }) => {
             <div className="animate md:col-6 lg:col-5 md:order-1">
               <div className="about-image relative ">
                 <Image
-                  src="/images/comsecurity/services/pso.jpg"
+                  src="/images/comsecurity/securityguard4.jpg"
                   width={600}
                   height={600}
                   alt=""
@@ -123,7 +123,7 @@ const Services = ({ data }) => {
             <div className="animate md:col-6 lg:col-5 md:order-1">
               <div className="about-image relative ">
                 <Image
-                  src="/images/comsecurity/services/aboutcom.jpg"
+                  src="/images/comsecurity/com121.jpeg"
                   width={600}
                   height={600}
                   alt=""
