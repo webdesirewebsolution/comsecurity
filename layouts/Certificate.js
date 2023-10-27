@@ -55,18 +55,19 @@ const Certificate = ({ }) => {
                             <img
                                 alt="gallery"
                                 class="block h-full w-full rounded-lg object-cover object-center"
-                                src="/images/comsecurity/rec.jpg" />
+                                src="/images/comsecurity/udyam3.png" />
                         </div>
                         {/* </div> */}
-
                         {/* <div class="flex w-1/3 flex-wrap"> */}
                         <div class="w-full p-1 md:p-2">
                             <img
                                 alt="gallery"
                                 class="block h-full w-full rounded-lg object-cover object-center"
-                                src="/images/comsecurity/udyam3.png" />
+                                src="/images/comsecurity/rec.jpg" />
                         </div>
                         {/* </div> */}
+
+                        
                         {/* <div class="flex w-1/3 flex-wrap">
                             <div class="w-full p-1 md:p-2">
                                 <img
