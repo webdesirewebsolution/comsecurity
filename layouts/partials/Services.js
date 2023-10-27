@@ -103,7 +103,7 @@ const Services = ({ data }) => {
             <div className="animate md:col-6 lg:col-5 md:order-2">
               <div className="about-image relative ">
                 <Image
-                  src="/images/comsecurity/services/pbodyguard.jpg"
+                  src="/images/comsecurity/bouncer12131.png"
                   width={600}
                   height={600}
                   alt=""
@@ -123,7 +123,7 @@ const Services = ({ data }) => {
             <div className="animate md:col-6 lg:col-5 md:order-1">
               <div className="about-image relative ">
                 <Image
-                  src="/images/comsecurity/com121.jpeg"
+                  src="/images/comsecurity/bouncer11.png"
                   width={600}
                   height={600}
                   alt=""

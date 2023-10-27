@@ -12,6 +12,10 @@
       "name": "Services",
       "url": "/services"
     },
+    {
+      "name": "Certificate",
+      "url": "/certificate"
+    },
    
     {
       "name": "Contact",

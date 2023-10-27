@@ -1,6 +1,7 @@
 import NotFound from "@layouts/404";
 import About from "@layouts/About";
 import Base from "@layouts/Baseof";
+import Certificate from "@layouts/Certificate";
 import Contact from "@layouts/Contact";
 import Default from "@layouts/Default";
 import Domesticpackages from "@layouts/Domesticpackages";
@@ -41,7 +42,9 @@ const RegularPages = ({ data }) => {
         <PrivacyPolicy data={data}/>
         ) : layout === "termsandconditions" ? (
           <TermsandConditions data={data}/>
-          ) :
+          ) : layout === "certificate" ? (
+            <Certificate data={data}/>
+            ) :
 
       (
         <Default data={data} />
