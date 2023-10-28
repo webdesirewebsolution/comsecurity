@@ -199,6 +199,11 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
               " banner-title opacity-0 text-white"
             )}
             {markdownify(
+              banner.subtitlesub,
+              "h3",
+              " banner-title opacity-0 text-white "
+            )}
+            {markdownify(
               banner.subtitle,
               "p",
               " banner-title opacity-0 text-white font-thin"

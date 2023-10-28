@@ -2,7 +2,8 @@
 banner:
   title: "COMSECURITY <br /> Security Guard Services"
   subtitle: "On-call service 24/7. Our professional security services include <br /> security guards, bodyguards and patrol. CALL NOW!"
-  # image: /images/banner-app.png
+  subtitlesub: We are certified with:- MSME,  ISO 9001:2015, PASARA
+ # image: /images/banner-app.png
   link: 
     label: Get Premium Version
     href: "#"

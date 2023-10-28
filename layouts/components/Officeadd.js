@@ -52,18 +52,6 @@ const Officeadd = () => {
                     <div className="row justify-center">
                         <div className="lg:col-12">
                             <div className="row  justify-center">
-                                {/* {our_office.countries.map((country, index) => (
-                  <div
-                    key={("country-", index)}
-                    className="animate mt-10 md:col-6 xl:col-3"
-                  >
-                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
-                      
-                      <h5 className="h4 mt-2">{country.name}</h5>
-                      <p className="mt-2">{country.location}</p>
-                    </div>
-                  </div>
-                ))} */}
 
                                 <div
 
