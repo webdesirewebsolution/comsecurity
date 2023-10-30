@@ -69,8 +69,8 @@ const Contact = ({ data }) => {
 
               <div className="text-center mt-1 me-4" style={{ display: "flex" }}>
                 <IoMail style={{ color: "blue", marginTop: "8px", marginRight: "10px" }} />
-                <Link href="comsecurity@gmail.com" >
-                  <h6 style={{ fontSize: '14px', fontWeight: '500' }} className="p-0 mt-2"> comsecurity@gmail.com
+                <Link href="info@comsecurity.in" >
+                  <h6 style={{ fontSize: '14px', fontWeight: '500' }} className="p-0 mt-2"> info@comsecurity.in
                     <style>
                       {
                         `
