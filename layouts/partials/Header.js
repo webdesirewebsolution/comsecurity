@@ -87,7 +87,7 @@ const Header = () => {
               <div className="text-center mt-1 me-4" style={{ display: "flex", marginLeft: "18px" }}>
 
                 <IoCall style={{ color: "blue", marginTop: "8px", marginRight: "10px" }} />
-                <Link href="whatsapp://send?abid=91-9971565508&text=Hello%2C%20World!">
+                <Link href="https://wa.me/919971565508?text=Hi" className="" >
                   <h6 style={{ fontSize: '14px', fontWeight: '500' }} className="p-0 mt-2"> +91-9971565508
                     <style>
                       {
