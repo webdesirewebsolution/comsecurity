@@ -88,7 +88,7 @@ const Contact = ({ data }) => {
               <div className="text-center mt-1 me-4" style={{ display: "flex" }}>
 
                 <IoCall style={{ color: "blue", marginTop: "8px", marginRight: "10px" }} />
-                <Link href="https://wa.me/919971565508?text=Hi" className="float" target="_blank">
+                <Link href="https://wa.me/919971565508?text=Hi" className="" target="_blank">
                   <h6 style={{ fontSize: '14px', fontWeight: '500' }} className="p-0 mt-2"> +91-9971565508
                     <style>
                       {
