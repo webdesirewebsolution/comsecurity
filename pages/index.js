@@ -611,7 +611,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-4
           relative max-w-md overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
-              <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/security2.jpg" alt="comsecurity" />
+              <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/housekeep.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
@@ -632,7 +632,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-4 
           relative max-w-md overflow-hidden bg-cover bg-no-repeat">
             <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
-              <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/com22.jpg" alt="comsecurity" />
+              <Image width={500} height={500} className="rounded-t-lg transition duration-300 ease-in-out hover:scale-110" src="/images/comsecurity/services/super.jpg" alt="comsecurity" />
             </a>
             <div className="p-5">
               <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank">
