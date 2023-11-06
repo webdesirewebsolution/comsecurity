@@ -43,7 +43,7 @@ const Services = ({ data }) => {
             <div className="animate md:col-6 lg:col-5 md:order-1">
               <div className="about-image relative ">
                 <Image
-                  src="/images/comsecurity/com131.jpeg"
+                  src="/images/comsecurity/services/super.jpg"
                   width={600}
                   height={600}
                   alt=""
@@ -63,7 +63,7 @@ const Services = ({ data }) => {
             <div className="animate md:col-6 lg:col-5 md:order-2">
               <div className="about-image relative ">
                 <Image
-                  src="/images/comsecurity/services/housekeeping1.jpeg"
+                  src="/images/comsecurity/services/housekeep.jpg"
                   width={600}
                   height={600}
                   alt=""

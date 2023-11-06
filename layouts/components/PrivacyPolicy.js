@@ -6,7 +6,7 @@ function PrivacyPolicy() {
         <div className='container'>
             <h1>Privacy Policy for com security</h1>
 
-            <p>At comsecurity.in, accessible from https://comsecurity.vercel.app/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by comsecurity.in and how we use it.</p>
+            <p>At comsecurity.in, accessible from https://comsecurity.in, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by comsecurity.in and how we use it.</p>
 
             <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
 
