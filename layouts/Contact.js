@@ -123,7 +123,7 @@ const Contact = ({ data }) => {
               <div className="flex flex-wrap items-center">
                 <div className="block w-full shrink-0 grow-0 basis-auto lg:flex lg:w-6/12 xl:w-4/12">
                   <div className="h-[500px] w-full">
-                 
+
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3496.8086702874393!2d77.2624033!3d28.784966100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cff843958b9e5%3A0x2a155ddb72573a4d!2sCOM%20SECURITY%20SERVICES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1697891176225!5m2!1sen!2sin"
                       className="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" frameBorder="0"
                       allowFullScreen></iframe>
@@ -131,8 +131,9 @@ const Contact = ({ data }) => {
                 </div>
                 <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 xl:w-8/12">
                   <div className="flex flex-wrap px-3 pt-12 pb-12 md:pb-0 lg:pt-0">
-                    <div className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:w-6/12 xl:px-12">
-                      <div className="flex items-start">
+                    <div
+                      className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:mb-0 xl:w-6/12 xl:px-12">
+                      <div className="align-start flex">
                         <div className="shrink-0">
                           <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
@@ -144,19 +145,52 @@ const Contact = ({ data }) => {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold dark:text-white">
-                            Branch Office (Haridware)
-                          </p>
-                          <p>R-76, Shivalik Nager, Haridware (UK) 249403
-                            Mob: +91 9718069976, +91 9355419326
+                          <p className="mb-2 font-bold dark:text-white">Corporate Office
                           </p>
                           <p className="text-neutral-500 dark:text-neutral-200">
-                            E-mail: comsecurity@gmail.com
-                          </p>
+                            B-133, SEC-A-5/6, RMS Palaza Trans Delhi Signature City, Loni, GZB (UP) 201102
 
+
+
+                          </p>
+                          <p className="text-neutral-500 dark:text-neutral-200">
+                            Mob: +91 1204262182, delhi@comsecurity.in
+                          </p>
                         </div>
                       </div>
                     </div>
+
+                    <div
+                      className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:mb-0 xl:w-6/12 xl:px-12">
+                      <div className="align-start flex">
+                        <div className="shrink-0">
+                          <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
+                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                              <path strokeLinecap="round" strokeLinejoin="round"
+                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                          </div>
+                        </div>
+                        <div className="ml-6 grow">
+                          <p className="mb-2 font-bold dark:text-white">Corporate Office
+                            (Delhi)</p>
+                          <p className="text-neutral-500 dark:text-neutral-200">
+                            D-142/2, Doulatpur Shahabad Dairy, New Delhi - 110042
+
+
+
+
+
+                          </p>
+                          <p className="text-neutral-500 dark:text-neutral-200">
+                            Mob: +91 9355256624, delhi@comsecurity.in
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
                     <div className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:w-6/12 xl:px-12">
                       <div className="flex items-start">
                         <div className="shrink-0">
@@ -173,15 +207,21 @@ const Contact = ({ data }) => {
                           <p className="mb-2 font-bold dark:text-white">
                             Branch Office (Noida)
                           </p>
-                          <p>Shop no. 9, Ground Floor Green India Place, Khoda Colony Noida, Sector-62,(U.P.)201301
+                          <p>Shop no. 9, Ground Floor Green India Place, Labour Chowk, Khoda Colony, opp. Sector-62 Noida, Sector-62,(U.P.)201301
                           </p>
 
                           <p className="text-neutral-500 dark:text-neutral-200">
                             Mob: +91 9319852290
                           </p>
+                          <p className="text-neutral-500 dark:text-neutral-200">
+                            E-mail: noida@comsecurity.in
+                          </p>
                         </div>
                       </div>
                     </div>
+
+                   
+                    
                     <div
                       className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:mb-0 xl:w-6/12 xl:px-12">
                       <div className="align-start flex">
@@ -208,6 +248,8 @@ const Contact = ({ data }) => {
                         </div>
                       </div>
                     </div>
+
+                    
                     <div
                       className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:mb-0 xl:w-6/12 xl:px-12">
                       <div className="align-start flex">
@@ -223,22 +265,22 @@ const Contact = ({ data }) => {
                         </div>
                         <div className="ml-6 grow">
                           <p className="mb-2 font-bold dark:text-white">Branch Office
-                                            (Rajasthan)</p>
+                            (Rajasthan)</p>
                           <p className="text-neutral-500 dark:text-neutral-200">
-                          241, sector-11, Aravali Vihar , Bhiwadi, Rajasthan - 301019
-                                            
+                            241, sector-11, Aravali Vihar , Bhiwadi, Rajasthan - 301019
+
 
 
                           </p>
                           <p className="text-neutral-500 dark:text-neutral-200">
-                          Mob: +91 7737028839, rajasthan@comsecurity.in
+                            Mob: +91 7737028839, rajasthan@comsecurity.in
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div
-                      className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:mb-0 xl:w-6/12 xl:px-12">
-                      <div className="align-start flex">
+
+                    <div className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:w-6/12 xl:px-12">
+                      <div className="flex items-start">
                         <div className="shrink-0">
                           <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
@@ -250,49 +292,21 @@ const Contact = ({ data }) => {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold dark:text-white">Branch Office
-                                            (Delhi)</p>
-                          <p className="text-neutral-500 dark:text-neutral-200">
-                          D-142/2, Shahabad Dairy, New Delhi - 110042 
-                                           
-
-
+                          <p className="mb-2 font-bold dark:text-white">
+                            Branch Office (Haridwar)
+                          </p>
+                          <p>R-76, Shivalik Nager, Haridware (UK) 249403
+                            Mob: +91 9911123058
                           </p>
                           <p className="text-neutral-500 dark:text-neutral-200">
-                          Mob: +91 9355256624, delhi@comsecurity.in
+                            E-mail: info@comsecurity.in
                           </p>
+
                         </div>
                       </div>
                     </div>
-                    <div
-                      className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:mb-0 xl:w-6/12 xl:px-12">
-                      <div className="align-start flex">
-                        <div className="shrink-0">
-                          <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                              <path strokeLinecap="round" strokeLinejoin="round"
-                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                            </svg>
-                          </div>
-                        </div>
-                        <div className="ml-6 grow">
-                          <p className="mb-2 font-bold dark:text-white">Corporate Office
-                                            (Delhi)</p>
-                          <p className="text-neutral-500 dark:text-neutral-200">
-                          B-133, SEC-A-5/6, RMS Palaza Trans Delhi Signature City, Loni, GZB (UP) 201102
-                                            
-                                           
 
-
-                          </p>
-                          <p className="text-neutral-500 dark:text-neutral-200">
-                          Mob: +91 1204262182, info@comsecurity.in
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                   
                     {/* <div className="w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 md:px-6 lg:w-full xl:w-6/12 xl:px-12">
                       <div className="align-start flex">
                         <div className="shrink-0">
