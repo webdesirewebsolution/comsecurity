@@ -14,9 +14,31 @@
     },
     {
       "name": "Certificates",
-      "url": "/certificate"
+      "url": "/certificate",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "ESI Certificate",
+          "url": "/esi"
+        },
+        {
+          "name": "EPFO Certificate",
+          "url": "/epfo"
+        },
+        {
+          "name": "act Certificate",
+          "url": "/act"
+        },
+        {
+          "name": "UR Certificate ",
+          "url": "/ur"
+        },
+        {
+          "name": "All Certificates ",
+          "url": "/certificate"
+        }
+      ]
     },
-   
     {
       "name": "Contact",
       "url": "/contact"

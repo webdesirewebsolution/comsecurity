@@ -521,6 +521,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
         </div>
       </section> */}
 
+    
 
       {/* About Us */}
       <section className="section">
@@ -779,7 +780,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                     <a href="#">
                       <h5 className="mb-2 mt-3 text-2xl  tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "20px", fontFamily: "'Montserrat', sans-serif" }}>24/7 Support</h5>
                     </a>
-                    <p className="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px"  }}>
+                    <p className="mb-3 font-normal text-gray-500 dark:text-gray-400" style={{ fontSize: "14px" }}>
                       Our trained professionals offer peace of mind, safeguarding your assets and ensuring safety at any hour. Your security, our commitment.
                     </p>
 
