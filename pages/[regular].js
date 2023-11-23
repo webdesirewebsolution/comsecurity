@@ -6,12 +6,12 @@ import Contact from "@layouts/Contact";
 import Default from "@layouts/Default";
 import Domesticpackages from "@layouts/Domesticpackages";
 import Internationalpackages from "@layouts/Internationalpackages";
-import Act from "@layouts/components/Act";
-import Epfo from "@layouts/components/Epfo";
-import Esi from "@layouts/components/Esi";
+import Act from "@layouts/Act";
+import Epfo from "@layouts/Epfo";
+import Esi from "@layouts/Esi";
 import PrivacyPolicy from "@layouts/components/PrivacyPolicy";
 import TermsandConditions from "@layouts/components/TermsandConditions";
-import Ur from "@layouts/components/Ur";
+import Ur from "@layouts/Ur";
 import Services from "@layouts/partials/Services";
 import { getRegularPage, getSinglePage } from "@lib/contentParser";
 
@@ -56,7 +56,7 @@ const RegularPages = ({ data }) => {
                   <Epfo data={data}/>
                   ) : layout === "ur" ? (
                     <Ur data={data}/>
-                    ) :
+                    ) : 
 
       (
         <Default data={data} />
