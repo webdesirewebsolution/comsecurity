@@ -4,10 +4,12 @@ const Esi = () => {
 
     return (
         <>
-            <iframe src="/images/comsecurity/certificates/esi.pdf"
+            {/* <iframe src="/images/comsecurity/certificates/esi.jpg"
                 // style="width: 100%;height: 100%;border: none;"
                 style={{ width: "100%", height: "579px", border: "none" }}
-            ></iframe>
+            ></iframe> */}
+            <img src="/images/comsecurity/certificates/esi.jpg"></img>
+            <img src="/images/comsecurity/certificates/esi2.jpg"></img>
         </>
     )
 }
