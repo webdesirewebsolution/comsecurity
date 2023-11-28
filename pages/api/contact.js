@@ -1,5 +1,4 @@
 // import { mailOptions, transporter } from "../../config/nodemailer";
-
 // const handler = async (req, res) => {
 //   if  (req.method === "POST") {
 //     const data = req.body;
@@ -35,8 +34,6 @@
 
 
 
-
-
 import { mailOptions, transporter } from "../../config/nodemailer";
 
 const CONTACT_MESSAGE_FIELDS = {
@@ -69,7 +66,6 @@ const handler = async (req, res) => {
       return res.status(400).send({ message: "Bad request" });
     }
 
-    
     try {
       await transporter.sendMail({
         ...mailOptions,
