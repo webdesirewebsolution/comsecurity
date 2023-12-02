@@ -2,7 +2,8 @@
 // mail
 import { useState } from "react";
 import { sendContactForm } from "../../lib/api";
-import { useToast,Button,
+import {
+    useToast, Button,
     Container,
     FormControl,
     FormErrorMessage,
@@ -10,7 +11,8 @@ import { useToast,Button,
     Heading,
     Input,
     Text,
-    Textarea, } from "@chakra-ui/react";
+    Textarea,
+} from "@chakra-ui/react";
 
 
 const initValues = { name: "", email: "", subject: "", message: "" };
@@ -70,82 +72,82 @@ function Contactform() {
                 </Text>
             )}
             <FormControl isRequired isInvalid={touched.name && !values.name} mb={5}>
-        <FormLabel className="lbl font-semibold">Name</FormLabel>
-        <Input 
-           className="inpt rounded w-full"
-          type="text"
-          name="name"
-          errorBorderColor="red.300"
-          value={values.name}
-          onChange={handleChange}
-          onBlur={onBlur}
-        />
-        <FormErrorMessage className="text-red-700">Required</FormErrorMessage>
-      </FormControl>
-      <FormControl isRequired isInvalid={touched.email && !values.email} mb={5}>
-        <FormLabel>Email</FormLabel>
-        <Input
-         className="inpt rounded w-full"
-          type="email"
-          name="email"
-          errorBorderColor="red.300"
-          value={values.email}
-          onChange={handleChange}
-          onBlur={onBlur}
-        />
-        <FormErrorMessage className="text-red-700">Required</FormErrorMessage>
-      </FormControl>
+                <FormLabel className="lbl font-semibold">Name</FormLabel>
+                <Input
+                    className="inpt rounded w-full"
+                    type="text"
+                    name="name"
+                    errorBorderColor="red.300"
+                    value={values.name}
+                    onChange={handleChange}
+                    onBlur={onBlur}
+                />
+                <FormErrorMessage className="text-red-700">Required</FormErrorMessage>
+            </FormControl>
+            <FormControl isRequired isInvalid={touched.email && !values.email} mb={5}>
+                <FormLabel>Email</FormLabel>
+                <Input
+                    className="inpt rounded w-full"
+                    type="email"
+                    name="email"
+                    errorBorderColor="red.300"
+                    value={values.email}
+                    onChange={handleChange}
+                    onBlur={onBlur}
+                />
+                <FormErrorMessage className="text-red-700">Required</FormErrorMessage>
+            </FormControl>
 
-      <FormControl
-        mb={5}
-        isRequired
-        isInvalid={touched.subject && !values.subject}
-      >
-        <FormLabel>Contact Number</FormLabel>
-        <Input
-         className="inpt rounded w-full"
-          type="text"
-          name="subject"
-          errorBorderColor="red.300"
-          value={values.subject}
-          onChange={handleChange}
-          onBlur={onBlur}
-        />
-        <FormErrorMessage className="text-red-700">Required</FormErrorMessage>
-      </FormControl>
+            <FormControl
+                mb={5}
+                isRequired
+                isInvalid={touched.subject && !values.subject}
+            >
+                <FormLabel>Contact Number</FormLabel>
+                <Input
+                    className="inpt rounded w-full"
+                    type="text"
+                    name="subject"
+                    errorBorderColor="red.300"
+                    value={values.subject}
+                    onChange={handleChange}
+                    onBlur={onBlur}
+                />
+                <FormErrorMessage className="text-red-700">Required</FormErrorMessage>
+            </FormControl>
 
-      <FormControl
-        isRequired
-        isInvalid={touched.message && !values.message}
-        mb={5}
-      >
-        <FormLabel>Message</FormLabel>
-        <Textarea
-         className="inpt rounded w-full"
-          type="text"
-          name="message"
-          rows={4}
-          errorBorderColor="red.300"
-          value={values.message}
-          onChange={handleChange}
-          onBlur={onBlur}
-        />
-        <FormErrorMessage className="text-red-700">Required</FormErrorMessage>
-      </FormControl>
+            <FormControl
+                isRequired
+                isInvalid={touched.message && !values.message}
+                mb={5}
+            >
+                <FormLabel>Message</FormLabel>
+                <Textarea
+                    className="inpt rounded w-full"
+                    type="text"
+                    name="message"
+                    rows={4}
+                    errorBorderColor="red.300"
+                    value={values.message}
+                    onChange={handleChange}
+                    onBlur={onBlur}
+                />
+                <FormErrorMessage className="text-red-700">Required</FormErrorMessage>
+            </FormControl>
 
-      <Button
-       className="inpt rounded w-full btn btn-primary block w-full"
-        variant="outline"
-        colorScheme="blue"
-        isLoading={isLoading}
-        disabled={
-          !values.name || !values.email || !values.subject || !values.message
-        }
-        onClick={onSubmit}
-      >
-        Submit
-      </Button>
-           
+            <Button
+                className="inpt rounded w-full btn btn-primary block w-full"
+                variant="outline"
+                colorScheme="blue"
+                isLoading={isLoading}
+                disabled={
+                    !values.name || !values.email || !values.subject || !values.message
+                }
+                onClick={onSubmit}
+            >
+                Submit
+            </Button>
+
         </div>
     )
 }

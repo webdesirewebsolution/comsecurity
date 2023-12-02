@@ -70,7 +70,7 @@ const handler = async (req, res) => {
       await transporter.sendMail({
         ...mailOptions,
         ...generateEmailContent(data),
-        subject: data.subject,
+        subject: data.name,
       });
 
       return res.status(200).json({ success: true });

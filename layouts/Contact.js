@@ -23,7 +23,7 @@ const Contact = ({ data }) => {
     display: 'flex',
     justifyContent: "space-around"
   }
-  return (
+  return ( 
     <>
 
       <div className="pagehding-sec">
