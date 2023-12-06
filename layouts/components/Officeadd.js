@@ -125,7 +125,7 @@ const Officeadd = () => {
             </section>
             <section className="section container">
                 <div className="animate text-center">
-                    <h2 className="section-title mt-4">KEYWORDS</h2>
+                    <h2 className="section-title mt-4 mb-5">KEYWORDS</h2>
                     
                 </div>
                 <div className="row justify-center">
