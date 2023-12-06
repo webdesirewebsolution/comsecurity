@@ -86,15 +86,6 @@ const Officeadd = () => {
                                             Mob: +91 9319852290,  noida@comsecurity.in</p>
                                     </div>
                                 </div>
-
-
-
-
-
-
-
-
-
                                 <div className="animate mt-10 md:col-8 xl:col-4">
                                     <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{ minHeight: "182px" }}>
 
@@ -131,6 +122,132 @@ const Officeadd = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+            <section className="section container">
+                <div className="animate text-center">
+                    <h2 className="section-title mt-4">KEYWORDS</h2>
+                    
+                </div>
+                <div className="row justify-center">
+                        <div className="lg:col-10">
+                            <div className="row  justify-center">
+
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>security solutions</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>professional security services</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>residential security guard</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>guard security guard</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>security guard</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>professional security</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>security guard services</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>armed security guard</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>event security guards</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>security protection services</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>security officer</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>guard services</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>armed security services</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>protective security office</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>security guards</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>security patrol services</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>event security services</h6>
+                                    </div>
+                                </div>
+                                <div className="animate mt-5 md:col-8 xl:col-4">
+                                    <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]">
+
+                                       <h6>construction site security guard</h6>
+                                    </div>
+                                </div>
+
+
+
+                                
+
+                            </div>
+                        </div>
+                    </div>
             </section>
 
         </>
