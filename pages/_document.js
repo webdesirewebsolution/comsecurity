@@ -24,18 +24,14 @@ const Document = () => {
           content="#000"
         />
 
-         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11394385102">
-        </script>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2T1YVSZN94"></script>
         <script>
-         {
-         `
           window.dataLayer = window.dataLayer || [];
-          function gtag()  {dataLayer.push(arguments);}
+          function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'AW-11394385102');
-          `
-          }
+
+          gtag('config', 'G-2T1YVSZN94');
         </script>
       </Head>
       <body>
