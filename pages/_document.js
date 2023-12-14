@@ -23,15 +23,17 @@ const Document = () => {
           media="(prefers-color-scheme: dark)"
           content="#000"
         />
-
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2T1YVSZN94"></script>
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-2T1YVSZN94');
+          {
+            `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2T1YVSZN94');
+  `
+          }
         </script>
       </Head>
       <body>

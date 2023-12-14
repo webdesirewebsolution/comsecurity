@@ -23,6 +23,8 @@ function Contactform() {
     const [state, setState] = useState(initState);
     const toast = useToast();
     const [touched, setTouched] = useState({});
+    // const [msg, setMsg] = useState("");
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
     const { values, isLoading, error } = state;
 
@@ -47,14 +49,27 @@ function Contactform() {
 
         try {
             await sendContactForm(values);
+            // setMsg("Submitted")
+            setShowSuccessMessage(true);
+            // setTimeout(() => {
+            //     setMsg("")
+            // }, 3000)
+            setTimeout(() => {
+                // Hide the success message after 2 seconds
+                setShowSuccessMessage(false);
+            }, 3000);
             setTouched({});
             setState(initState);
-            toast({
-                title: "Message sent.",
-                status: "success",
-                duration: 2000,
-                position: "top",
-            });
+            // toast({
+            //     title: "Message sent.",
+            //     status: "success",
+            //     duration: 2000,
+            //     position: "center",
+            //     style: {
+            //         color: "green", 
+                    
+            //     }
+            // });
         } catch (error) {
             setState((prev) => ({
                 ...prev,
@@ -136,7 +151,7 @@ function Contactform() {
             </FormControl>
 
             <Button
-                className="inpt rounded w-full btn btn-primary block w-full"
+                className="inpt rounded  btn btn-primary block w-full"
                 variant="outline"
                 colorScheme="blue"
                 isLoading={isLoading}
@@ -147,6 +162,14 @@ function Contactform() {
             >
                 Submit
             </Button>
+          
+
+            {showSuccessMessage && (
+                <h6 className="my-4"  fontSize="xl" style={{color:"green"}}>
+                Message sent.
+            </h6>
+            )}
+
 
         </div>
     )
