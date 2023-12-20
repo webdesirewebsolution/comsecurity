@@ -12,7 +12,7 @@ import ImageFallback from "./components/ImageFallback";
 import Services from "./partials/Services";
 
 const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
-  let { description, title, date, image, author } = frontmatter;
+  let { description, title, metatitle, date, image, author } = frontmatter;
   description = description ? description : content.slice(0, 120);
 
   const { disqus } = config;
@@ -37,6 +37,7 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
               </div>
               <div className="lg:col-8">
                 {markdownify(title, "h1", "h2 mt-6")}
+                {markdownify(metatitle, "h6", "h6 mt-6")}
                 <div className="mt-6 flex items-center">
                   <div className="overflow-hidden rounded-full border-2 border-white shadow-[0_0_0_2px] shadow-primary">
                     <ImageFallback
@@ -57,7 +58,7 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
                   <MDXRemote {...mdxContent} components={shortcodes} />
                 </div>
               </div>
-              {disqus.enable && (
+              {/* {disqus.enable && (
                 <div className="fade row justify-center opacity-0">
                   <div className="lg:col-8">
                     <DiscussionEmbed
@@ -66,7 +67,7 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
                     />
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
           </article>
 

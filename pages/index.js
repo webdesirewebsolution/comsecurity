@@ -595,7 +595,8 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial, servic
                 <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style={{ fontSize: "18px" }}>SECURITY GUARD</h5>
               </a>
               <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">Trained Security Guard</p>
-              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank" className="hover:text-white bg-transparent border border-red-500  hover:bg-red-500  inline-flex items-center px-3 py-2 text-sm font-small text-center text-dark  bg-blue-700 rounded-2xl  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a href="https://wa.me/919971565508? text=Hi, i wanna ask about something?" target="_blank"
+               className="hover:text-white bg-transparent border border-red-500  hover:bg-red-500  inline-flex items-center px-3 py-2 text-sm font-small text-center text-dark  bg-blue-700 rounded-2xl  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Get Quote
                 {/* <button className="me-3 bg-transparent hover:bg-red-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded" style={{ height: "52px" }}>
                 Contact Us
