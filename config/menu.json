@@ -66,6 +66,10 @@
       "url": "/contact"
     },
     {
+      "name": "Blog",
+      "url": "/posts"
+    },
+    {
       "name": "Privacy Policy",
       "url": "/privacypolicy"
     },
