@@ -39,18 +39,18 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
                 {markdownify(title, "h1", "h2 mt-6")}
                 {markdownify(metatitle, "h6", "h6 mt-6")}
                 <div className="mt-6 flex items-center">
-                  <div className="overflow-hidden rounded-full border-2 border-white shadow-[0_0_0_2px] shadow-primary">
+                  {/* <div className="overflow-hidden rounded-full border-2 border-white shadow-[0_0_0_2px] shadow-primary">
                     <ImageFallback
                       src={author.avatar}
                       width={50}
                       height={50}
                       alt="author"
                     />
-                  </div>
-                  <div className="pl-5">
-                    <p className="font-medium text-dark">{author.name}</p>
+                  </div> */}
+                  <div className="">
+                    {/* <p className="font-medium text-dark">{author.name}</p> */}
                     <p>
-                      {dateFormat(date)} - {readingTime(content)}
+                      {dateFormat(date)}
                     </p>
                   </div>
                 </div>
@@ -71,16 +71,16 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
             </div>
           </article>
 
-          <div className="section mt-16">
+          {/* <div className="section mt-16">
             <h2 className="section-title text-center">Recent Articles</h2>
             <div className="row justify-center">
               {recentPosts.slice(0, 2).map((post, index) => (
                 <div key={"post-" + index} className="animate mt-16 lg:col-5">
-                  {/* <Services post={post} /> */}
+                  <Services post={post} />
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
