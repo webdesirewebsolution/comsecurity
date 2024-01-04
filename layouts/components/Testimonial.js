@@ -12,7 +12,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const Testimonial = ({ testimonial }) => {
   return (
-    <section className="text-neutral-700 dark:text-neutral-300">
+    <section className="text-neutral-700 dar:text-neutral-300">
       <div className="mx-auto text-center md:max-w-xl lg:max-w-3xl">
         <h3 className="mb-6 text-3xl font-bold">Testimonials</h3>
         <p className="mb-6 pb-2 md:mb-12 md:pb-0">
@@ -24,10 +24,10 @@ const Testimonial = ({ testimonial }) => {
       <div className="grid gap-6 text-center md:grid-cols-3">
         <div>
           <div
-            className="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
+            className="block rounded-lg bg-white shadow-lg dar:bg-neutral-700 dar:shadow-black/30">
             <div className="h-28 overflow-hidden rounded-t-lg bg-[#9d789b]"></div>
             <div
-              className="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+              className="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dar:border-neutral-800 dar:bg-neutral-800">
               <img
                 src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" />
             </div>
@@ -51,10 +51,10 @@ const Testimonial = ({ testimonial }) => {
         </div>
         <div>
           <div
-            className="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
+            className="block rounded-lg bg-white shadow-lg dar:bg-neutral-700 dar:shadow-black/30">
             <div className="h-28 overflow-hidden rounded-t-lg bg-[#7a81a8]"></div>
             <div
-              className="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+              className="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dar:border-neutral-800 dar:bg-neutral-800">
               <img
                 src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" />
             </div>
@@ -78,10 +78,10 @@ const Testimonial = ({ testimonial }) => {
         </div>
         <div>
           <div
-            className="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
+            className="block rounded-lg bg-white shadow-lg dar:bg-neutral-700 dar:shadow-black/30">
             <div className="h-28 overflow-hidden rounded-t-lg bg-[#6d5b98]"></div>
             <div
-              className="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+              className="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dar:border-neutral-800 dar:bg-neutral-800">
               <img
                 src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" />
             </div>
