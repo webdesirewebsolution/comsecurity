@@ -13,7 +13,7 @@ const Document = () => {
         {/* theme meta */}
         <meta name="theme-name" content="andromeda-light-nextjs" />
         <meta name="msapplication-TileColor" content="#000000" />
-        <meta
+        <meta 
           name="theme-color"
           media="(prefers-color-scheme: light)"
           content="#fff"
