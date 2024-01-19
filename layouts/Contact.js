@@ -56,14 +56,14 @@ const Contact = ({ data }) => {
             /> */}
 
               <h2 className="mb-6 text-3xl font-bold">Feel free to contact us​</h2>
-              <p className="mb-6 text-neutral-500 dark:text-neutral-300">
+              <p className="mb-6 text-neutral-500 dar:text-neutral-300">
                 If you are looking for a body guard , House kepper, Security Guard, Gunman so connect us.
               </p>
 
-              {/* <p className="mb-2 text-neutral-500 dark:text-neutral-300">
+              {/* <p className="mb-2 text-neutral-500 dar:text-neutral-300">
                 +91-9971565508
               </p>
-              <p className="mb-2 text-neutral-500 dark:text-neutral-300">
+              <p className="mb-2 text-neutral-500 dar:text-neutral-300">
                 care@comsecurity.in
               </p> */}
 
@@ -119,7 +119,7 @@ const Contact = ({ data }) => {
 
           <section className="">
             <div
-              className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+              className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dar:bg-neutral-700">
               <div className="flex flex-wrap items-center">
                 <div className="block w-full shrink-0 grow-0 basis-auto lg:flex lg:w-6/12 xl:w-4/12">
                   <div className="h-[500px] w-full">
@@ -137,7 +137,7 @@ const Contact = ({ data }) => {
                         <div className="shrink-0">
                           <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dar:text-primary-400">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                               <path strokeLinecap="round" strokeLinejoin="round"
                                 d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
@@ -145,15 +145,15 @@ const Contact = ({ data }) => {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold dark:text-white">Corporate Office
+                          <p className="mb-2 font-bold dar:text-white">Corporate Office
                           </p>
-                          <p className="text-neutral-500 dark:text-neutral-200">
+                          <p className="text-neutral-500 dar:text-neutral-200">
                             B-133, SEC-A-5/6, RMS Palaza Trans Delhi Signature City, Loni, GZB (UP) 201102
 
 
 
                           </p>
-                          <p className="text-neutral-500 dark:text-neutral-200">
+                          <p className="text-neutral-500 dar:text-neutral-200">
                             Mob: +91 1204262182, delhi@comsecurity.in
                           </p>
                         </div>
@@ -166,7 +166,7 @@ const Contact = ({ data }) => {
                         <div className="shrink-0">
                           <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dar:text-primary-400">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                               <path strokeLinecap="round" strokeLinejoin="round"
                                 d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
@@ -174,9 +174,9 @@ const Contact = ({ data }) => {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold dark:text-white">Corporate Office
+                          <p className="mb-2 font-bold dar:text-white">Corporate Office
                             (Delhi)</p>
-                          <p className="text-neutral-500 dark:text-neutral-200">
+                          <p className="text-neutral-500 dar:text-neutral-200">
                             D-142/2, Doulatpur Shahabad Dairy, New Delhi - 110042
 
 
@@ -184,7 +184,7 @@ const Contact = ({ data }) => {
 
 
                           </p>
-                          <p className="text-neutral-500 dark:text-neutral-200">
+                          <p className="text-neutral-500 dar:text-neutral-200">
                             Mob: +91 9355256624, delhi@comsecurity.in
                           </p>
                         </div>
@@ -196,7 +196,7 @@ const Contact = ({ data }) => {
                         <div className="shrink-0">
                           <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dar:text-primary-400">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                               <path strokeLinecap="round" strokeLinejoin="round"
                                 d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
@@ -204,16 +204,16 @@ const Contact = ({ data }) => {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold dark:text-white">
+                          <p className="mb-2 font-bold dar:text-white">
                             Branch Office (Noida)
                           </p>
                           <p>Shop no. 9, Ground Floor Green India Place, Labour Chowk, Khoda Colony, opp. Sector-62 Noida, Sector-62,(U.P.)201301
                           </p>
 
-                          <p className="text-neutral-500 dark:text-neutral-200">
+                          <p className="text-neutral-500 dar:text-neutral-200">
                             Mob: +91 9319852290
                           </p>
-                          <p className="text-neutral-500 dark:text-neutral-200">
+                          <p className="text-neutral-500 dar:text-neutral-200">
                             E-mail: noida@comsecurity.in
                           </p>
                         </div>
@@ -228,7 +228,7 @@ const Contact = ({ data }) => {
                         <div className="shrink-0">
                           <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dar:text-primary-400">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                               <path strokeLinecap="round" strokeLinejoin="round"
                                 d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
@@ -236,13 +236,13 @@ const Contact = ({ data }) => {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold dark:text-white">Branch Office (Haryana)</p>
-                          <p className="text-neutral-500 dark:text-neutral-200">
+                          <p className="mb-2 font-bold dar:text-white">Branch Office (Haryana)</p>
+                          <p className="text-neutral-500 dar:text-neutral-200">
                             Plot No. 490, Sector-1 , imt, manesar gurgaon - 122051
 
 
                           </p>
-                          <p className="text-neutral-500 dark:text-neutral-200">
+                          <p className="text-neutral-500 dar:text-neutral-200">
                             Mob: +91 9319513464, haryana@comsecurity.in
                           </p>
                         </div>
@@ -256,7 +256,7 @@ const Contact = ({ data }) => {
                         <div className="shrink-0">
                           <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dar:text-primary-400">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                               <path strokeLinecap="round" strokeLinejoin="round"
                                 d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
@@ -264,15 +264,15 @@ const Contact = ({ data }) => {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold dark:text-white">Branch Office
+                          <p className="mb-2 font-bold dar:text-white">Branch Office
                             (Rajasthan)</p>
-                          <p className="text-neutral-500 dark:text-neutral-200">
+                          <p className="text-neutral-500 dar:text-neutral-200">
                             241, sector-11, Aravali Vihar , Bhiwadi, Rajasthan - 301019
 
 
 
                           </p>
-                          <p className="text-neutral-500 dark:text-neutral-200">
+                          <p className="text-neutral-500 dar:text-neutral-200">
                             Mob: +91 7737028839, rajasthan@comsecurity.in
                           </p>
                         </div>
@@ -284,7 +284,7 @@ const Contact = ({ data }) => {
                         <div className="shrink-0">
                           <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dar:text-primary-400">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                               <path strokeLinecap="round" strokeLinejoin="round"
                                 d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
@@ -292,13 +292,13 @@ const Contact = ({ data }) => {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold dark:text-white">
+                          <p className="mb-2 font-bold dar:text-white">
                             Branch Office (Haridwar)
                           </p>
                           <p>R-76, Shivalik Nager, Haridware (UK) 249403
                             Mob: +91 9911123058
                           </p>
-                          <p className="text-neutral-500 dark:text-neutral-200">
+                          <p className="text-neutral-500 dar:text-neutral-200">
                             E-mail: info@comsecurity.in
                           </p>
 
@@ -312,18 +312,18 @@ const Contact = ({ data }) => {
                         <div className="shrink-0">
                           <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dark:text-primary-400">
+                              stroke="currentColor" className="mx-auto mb-6 h-8 w-8 text-primary dar:text-primary-400">
                               <path strokeLinecap="round" strokeLinejoin="round"
                                 d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                             </svg>
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold dark:text-white">Contact</p>
-                          <p className="text-neutral-500 dark:text-neutral-200">
+                          <p className="mb-2 font-bold dar:text-white">Contact</p>
+                          <p className="text-neutral-500 dar:text-neutral-200">
                             care@comsecurity.in
                           </p>
-                          <p className="text-neutral-500 dark:text-neutral-200">
+                          <p className="text-neutral-500 dar:text-neutral-200">
                             +91-9971565508
                           </p>
                         </div>
