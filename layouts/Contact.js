@@ -295,7 +295,7 @@ const Contact = ({ data }) => {
                           <p className="mb-2 font-bold dar:text-white">
                             Branch Office (Haridwar)
                           </p>
-                          <p>R-76, Shivalik Nager, Haridware (UK) 249403
+                          <p>R-76, Shivalik Nager, Haridwar (UK) 249403
                             Mob: +91 9911123058
                           </p>
                           <p className="text-neutral-500 dar:text-neutral-200">

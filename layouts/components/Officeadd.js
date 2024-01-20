@@ -112,7 +112,7 @@ const Officeadd = () => {
                                     <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{ minHeight: "182px" }}>
 
                                         <h5 className="h4 mt-2">Branch Office (Haridwar) </h5>
-                                        <p className="mt-2">R-76, Shivalik Nager, Haridware (UK) 249403  Mob: +91 9911123058,  info@comsecurity.in
+                                        <p className="mt-2">R-76, Shivalik Nager, Haridwar (UK) 249403  Mob: +91 9911123058,  info@comsecurity.in
                                         </p>
                                     </div>
                                 </div>

@@ -71,10 +71,9 @@ const Services = ({ data }) => {
               </div>
             </div>
             <div className="animate md:col-6 lg:col-4 md:order-1">
-              <h3 className="section-title bar-left mt-4">HOUSE KEEPING</h3>
+              <h3 className="section-title bar-left mt-4">HOUSEKEEPING</h3>
               <p className="mt-5 text-justify">
-                Condimentum massa aliquam nec eget iaculis integer eu, amet purus, vel eget nunc, sed lectus et quis quam sit felis at in morbi nibh non, at ultrices commodo egestas amet, porttitor habitasse donec elementum duis amet pretium.
-              </p>
+              ComSecurity's Housekeeping Service offers a comprehensive and professional solution for maintaining a pristine and secure environment in both residential and commercial settings. As a trusted provider in the industry, ComSecurity understands the importance of cleanliness, order, and security in enhancing the overall well-being of spaces.              </p>
             </div>
           </div>
         </div>
