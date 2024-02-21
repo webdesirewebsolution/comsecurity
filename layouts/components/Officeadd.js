@@ -59,8 +59,8 @@ const Officeadd = () => {
                                         <h5 className="h4 mt-2">Corporate Office
 
                                         </h5>
-                                        <p className="mt-2"> Address:B-133, SEC-A-5/6, RMS Palaza Trans Delhi Signature City, Loni, GZB (UP) 201102 </p> <br/>
-                                        <p> Phone: +91 1204262182, </p> <br/>
+                                        <p className="mt-2"> Address:B-133, SEC-A-5/6, RMS Palaza Trans Delhi Signature City, Loni, GZB (UP) 201102 </p> 
+                                        <p> Phone: +91 1204262182, </p>
                                          <p>   Email:  info@comsecurity.in </p>
                                     </div>
                                 </div>
