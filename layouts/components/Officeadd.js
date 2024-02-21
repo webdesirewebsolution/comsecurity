@@ -73,7 +73,7 @@ const Officeadd = () => {
                                         </h5>
                                         <p className="mt-2"> Address: D-142/2, Doulatpur Shahabad Dairy, New Delhi - 110042 </p>
                                           <p> Phone: +91 9355256624, </p>
-                                           <p> Email: delhi@comsecurity.in </p>
+                                           <p>Phone: delhi@comsecurity.in </p>
                                     </div>
                                 </div>
 
