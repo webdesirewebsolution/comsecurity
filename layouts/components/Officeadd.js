@@ -92,7 +92,7 @@ const Officeadd = () => {
                                         <h5 className="h4 mt-2">Branch Office
                                             (Haryana)
                                         </h5>
-                                        <p className="mt-2">Plot No. 490, Sector-1 , imt, manesar gurgaon - 122051
+                                        <p className="mt-2">Plot No. 36/20, Sector-11 , Shanti Nagar Gurgaon Haryana - 122001
                                             Mob: +91 9319513464, haryana@comsecurity.in</p>
                                     </div>
                                 </div>
