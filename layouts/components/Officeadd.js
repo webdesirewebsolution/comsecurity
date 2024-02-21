@@ -1,4 +1,4 @@
-import { markdownify } from "@lib/utils/textConverter";
++import { markdownify } from "@lib/utils/textConverter";
 // import { Autoplay } from "swiper";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import Banner from "./components/Banner";
@@ -73,7 +73,7 @@ const Officeadd = () => {
                                         </h5>
                                         <p className="mt-2"> Address: D-142/2, Doulatpur Shahabad Dairy, New Delhi - 110042 </p>
                                           <p> Phone: +91 9355256624, </p>
-                                           <p> delhi@comsecurity.in </p>
+                                           <p> Email: delhi@comsecurity.in </p>
                                     </div>
                                 </div>
 
@@ -86,7 +86,7 @@ const Officeadd = () => {
                                         </h5>
                                         <p className="mt-2">Address: Shop no. 9, Ground Floor Green India Place, Labour Chowk, Khoda Colony, opp. Sector-62 Noida, Sector-62,(U.P.)201301 </p>
                                          <p> Phone: +91 9319852290, </p> 
-                                         <p> noida@comsecurity.in </p>
+                                         <p> Email: noida@comsecurity.in </p>
                                     </div>
                                 </div>
                                 <div className="animate mt-10 md:col-8 xl:col-4">
@@ -97,7 +97,7 @@ const Officeadd = () => {
                                         </h5>
                                         <p className="mt-2">Address: Plot No. 36/20, Sector-11 , Shanti Nagar Gurgaon Haryana - 122001 </p>
                                           <p> Phone: +91 9319513464, </p> 
-                                          <p> haryana@comsecurity.in</p>
+                                          <p> Email: haryana@comsecurity.in</p>
                                     </div>
                                 </div>
                                 <div className="animate mt-10 md:col-8 xl:col-4">
@@ -108,7 +108,7 @@ const Officeadd = () => {
                                         </h5>
                                         <p className="mt-2">Address: 241, sector-11, Aravali Vihar , Bhiwadi, Rajasthan - 301019 </p>
                                            <p> Phone: +91 7737028839, </p> 
-                                           <p> rajasthan@comsecurity.in</p>
+                                           <p> Email: rajasthan@comsecurity.in</p>
                                     </div>
                                 </div>
 
@@ -119,7 +119,7 @@ const Officeadd = () => {
                                         <h5 className="h4 mt-2">Branch Office (Haridwar) </h5>
                                         <p className="mt-2">Address: R-76, Shivalik Nager, Haridwar (UK) 249403  </p>
                                         <p> Phone: +91 9911123058, </p> 
-                                        <p> info@comsecurity.in </p>
+                                        <p> Email: info@comsecurity.in </p>
                                     </div>
                                 </div>
 
