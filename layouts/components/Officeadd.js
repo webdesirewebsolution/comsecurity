@@ -60,8 +60,8 @@ const Officeadd = () => {
 
                                         </h5>
                                         <p className="mt-2"> Address:B-133, SEC-A-5/6, RMS Palaza Trans Delhi Signature City, Loni, GZB (UP) 201102 </p> 
-                                        <p style={{ padding-top: '2px' }}> Phone: +91 1204262182, </p>
-                                         <p style={{ padding-top: '2px' }}> Email:  info@comsecurity.in </p>
+                                        <p> Phone: +91 1204262182, </p>
+                                         <p> Email:  info@comsecurity.in </p>
                                     </div>
                                 </div>
 
@@ -73,7 +73,7 @@ const Officeadd = () => {
                                         </h5>
                                         <p className="mt-2"> Address: D-142/2, Doulatpur Shahabad Dairy, New Delhi - 110042 </p>
                                           <p> Phone: +91 9355256624, </p>
-                                           <p>Email: delhi@comsecurity.in </p>
+                                          <p> Email: delhi@comsecurity.in </p>
                                     </div>
                                 </div>
 
@@ -97,7 +97,7 @@ const Officeadd = () => {
                                         </h5>
                                         <p className="mt-2">Address: Plot No. 36/20, Sector-11 , Shanti Nagar Gurgaon Haryana - 122001 </p>
                                           <p> Phone: +91 9319513464, </p> 
-                                          <p> Email: haryana@comsecurity.in</p>
+                                          <p> Email: haryana@comsecurity.in </p>
                                     </div>
                                 </div>
                                 <div className="animate mt-10 md:col-8 xl:col-4">
@@ -108,7 +108,7 @@ const Officeadd = () => {
                                         </h5>
                                         <p className="mt-2">Address: 241, sector-11, Aravali Vihar , Bhiwadi, Rajasthan - 301019 </p>
                                            <p> Phone: +91 7737028839, </p> 
-                                           <p> Email: rajasthan@comsecurity.in</p>
+                                           <p> Email: rajasthan@comsecurity.in </p>
                                     </div>
                                 </div>
 
