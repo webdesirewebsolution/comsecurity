@@ -61,7 +61,7 @@ const Officeadd = () => {
                                         </h5>
                                         <p className="mt-2"> Address:B-133, SEC-A-5/6, RMS Palaza Trans Delhi Signature City, Loni, GZB (UP) 201102 </p> 
                                         <p> Phone: +91 1204262182, </p>
-                                         <p> Email:  info@comsecurity.in </p>
+                                         <p> Email: info@comsecurity.in </p>
                                     </div>
                                 </div>
 
