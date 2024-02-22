@@ -59,9 +59,10 @@ const Officeadd = () => {
                                         <h5 className="h4 mt-2">Corporate Office
 
                                         </h5>
-                                        <p className="mt-2"> Address:B-133, SEC-A-5/6, RMS Palaza Trans Delhi Signature City, Loni, GZB (UP) 201102 </p> 
-                                        <p> Phone: +91 1204262182, </p>
-                                         <p> Email: info@comsecurity.in </p>
+                                        <p className="mt-2"> Address:B-133, SEC-A-5/6, RMS Palaza Trans Delhi Signature City, Loni, GZB (UP) 201102 <br>
+                                         Phone: +91 1204262182, <br>
+                                          Email: info@comsecurity.in 
+                                        </p>
                                     </div>
                                 </div>
 
@@ -71,9 +72,10 @@ const Officeadd = () => {
                                         <h5 className="h4 mt-2">Branch Office
                                             (Delhi)
                                         </h5>
-                                        <p className="mt-2"> Address: D-142/2, Doulatpur Shahabad Dairy, New Delhi - 110042 </p>
-                                          <p> Phone: +91 9355256624, </p>
-                                          <p> Email: delhi@comsecurity.in </p>
+                                        <p className="mt-2"> Address: D-142/2, Doulatpur Shahabad Dairy, New Delhi - 110042 <br>
+                                           Phone: +91 9355256624, <br>
+                                           Email: delhi@comsecurity.in 
+                                        </p>
                                     </div>
                                 </div>
 
@@ -84,9 +86,9 @@ const Officeadd = () => {
                                         <h5 className="h4 mt-2">Branch Office
                                             (Noida)
                                         </h5>
-                                        <p className="mt-2">Address: Shop no. 9, Ground Floor Green India Place, Labour Chowk, Khoda Colony, opp. Sector-62 Noida, Sector-62,(U.P.)201301 </p>
-                                         <p> Phone: +91 9319852290, </p> 
-                                         <p> Email: noida@comsecurity.in </p>
+                                        <p className="mt-2">Address: Shop no. 9, Ground Floor Green India Place, Labour Chowk, Khoda Colony, opp. Sector-62 Noida, Sector-62,(U.P.)201301 <br>
+                                          Phone: +91 9319852290, <br> 
+                                          Email: noida@comsecurity.in </p>
                                     </div>
                                 </div>
                                 <div className="animate mt-10 md:col-8 xl:col-4">
@@ -95,9 +97,9 @@ const Officeadd = () => {
                                         <h5 className="h4 mt-2">Branch Office
                                             (Haryana)
                                         </h5>
-                                        <p className="mt-2">Address: Plot No. 36/20, Sector-11 , Shanti Nagar Gurgaon Haryana - 122001 </p>
-                                          <p> Phone: +91 9319513464, </p> 
-                                          <p> Email: haryana@comsecurity.in </p>
+                                        <p className="mt-2">Address: Plot No. 36/20, Sector-11 , Shanti Nagar Gurgaon Haryana - 122001 <br>
+                                           Phone: +91 9319513464, <br> 
+                                           Email: haryana@comsecurity.in </p>
                                     </div>
                                 </div>
                                 <div className="animate mt-10 md:col-8 xl:col-4">
@@ -106,9 +108,9 @@ const Officeadd = () => {
                                         <h5 className="h4 mt-2">Branch Office
                                             (Rajasthan)
                                         </h5>
-                                        <p className="mt-2">Address: 241, sector-11, Aravali Vihar , Bhiwadi, Rajasthan - 301019 </p>
-                                           <p> Phone: +91 7737028839, </p> 
-                                           <p> Email: rajasthan@comsecurity.in </p>
+                                        <p className="mt-2">Address: 241, sector-11, Aravali Vihar , Bhiwadi, Rajasthan - 301019 <br>
+                                            Phone: +91 7737028839, <br>
+                                            Email: rajasthan@comsecurity.in </p>
                                     </div>
                                 </div>
 
@@ -117,9 +119,9 @@ const Officeadd = () => {
                                     <div className="rounded-xl p-5 shadow-[0_4px_25px_rgba(0,0,0,.05)]" style={{ minHeight: "182px" }}>
 
                                         <h5 className="h4 mt-2">Branch Office (Haridwar) </h5>
-                                        <p className="mt-2">Address: R-76, Shivalik Nager, Haridwar (UK) 249403  </p>
-                                        <p> Phone: +91 9911123058, </p> 
-                                        <p> Email: info@comsecurity.in </p>
+                                        <p className="mt-2">Address: R-76, Shivalik Nager, Haridwar (UK) 249403  <br>
+                                         Phone: +91 9911123058, <br>
+                                         Email: info@comsecurity.in </p>
                                     </div>
                                 </div>
 
